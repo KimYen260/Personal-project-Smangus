@@ -1,0 +1,182 @@
+@import "./normalize.css";
+
+body {
+    font-size: 0;
+    margin: 0 auto;
+    /*去除原始白邊,使滿版*/
+    font-family: "Arial", Helvetica, sans-serif;
+}
+
+div.top_nav {
+    color: white;
+    background-color: #1D2601;
+    height: 32px;
+    width: 100%;
+    /*視窗大小*/
+    font-size: 14px;
+    /* border: 1px solid brown; */
+    box-sizing: border-box;
+}
+
+div.top_nav>span {
+    float: right;
+    clear: both;
+    /*清除浮動*/
+    align-content: center;
+    line-height: 32px;
+    padding-right: 140px;
+}
+
+
+/* first banner */
+nav.header div.menu {
+    background-image: url(/images/pagecover/20_0001124_4.jpg);
+    width: 100%;
+    height: 480px;
+    background-repeat: no-repeat;
+    /* border: 1px solid black; */
+    margin: 0;
+    display: inline-block;
+    display: flex;
+    
+}
+
+nav.header div.menu ul.main_menu {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    height: 48px;
+    position: relative;
+    /* border: 1px solid black; */
+    display: flex;
+}
+
+nav.header div.menu ul.main_menu>li {
+    display: inline-block;
+    list-style: none;
+    color: white;
+    margin-right: 45px;
+    /* line-height: 48px; */
+    /* text-align: center; */
+    /* vertical-align: middle; */
+}
+
+nav.header div.menu ul.main_menu>li>a {
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    /* font-weight: 700; */
+    line-height: 48px;
+    font-size: 14px;
+}
+
+nav.header div.menu ul.main_menu>li>a:hover {
+    text-decoration: none;
+    color: #3B8DBF;
+    font-weight: 700;
+    /* border-bottom: 2px solid #3B8DBF ; */
+}
+
+nav.header div.menu ul.main_menu>li>a:visited {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* nav_logo */
+nav.header div.menu ul.main_menu>li.nav_logo>a img {
+    list-style: none;
+    width: 47.5px;
+    height: 35px;
+    margin: 6px 65px 6px 140px;
+    line-height: 48px;
+
+}
+
+/* svg */
+nav.header div.menu>div.nav_icons {
+    /* display: flex;
+    /* display: inline-block; */
+    /* justify-content: space-between;  */
+/* font-size: 14px; */
+}
+
+nav.header>div.menu>a.svg::before{
+    /* display: flex;
+    justify-content: space-between; */
+    content: "";
+    display: block;
+    clear: both;
+}
+nav.header div.menu>a.svg {
+    display: block;
+    height: 48px;
+    width: 56px;
+    font-size: 14px;
+    line-height: 48px;
+    background-color:rgba(255, 255, 255, 0.3);
+    cursor: pointer ;
+}
+
+.mr140{
+margin-right: 140px;
+}
+
+nav.header div.menu>a i.fas {
+    /* box-sizing: border-box; */
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    color: white;
+    line-height: 48px;
+    border: 1px black solid;
+    vertical-align: middle;
+}
+
+
+
+
+/* .main_menu裡面的子目錄 */
+nav.header div.menu .main_menu ul {
+    background: rgba(255, 255, 255, 0.3);
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    font-size: 14px;
+    position: absolute;
+    transition: all .5s ease;
+    border: 1px solid black;
+    top: 48px;
+    height: 0;
+    /* width: 56px; */
+    list-style: none;
+    left: 289px;
+}
+
+nav.header div.menu .main_menu ul.submenu_rental {
+    position: absolute;
+    left: 390px;
+}
+
+nav.header div.menu .main_menu li:hover ul {
+    height: 80px;
+    transform: translateY(0);
+    opacity: 1;
+    /* left: 300px; */
+}
+
+nav.header div.menu .main_menu ul a {
+    color: rgba(255, 255, 255, 0.3);
+    display: block;
+    padding: 0 8px 10px 8px;
+    text-decoration: none;
+    color: white;
+}
+
+nav.header div.menu .main_menu ul a:hover {
+    color: black;
+    text-decoration: none;
+}
