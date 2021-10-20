@@ -41,8 +41,9 @@ nav.header div.menu {
     
 }
 
+/* /menu整體/ */
 nav.header div.menu ul.main_menu {
-    display: inline-block;
+    /* display: inline-block; */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -54,23 +55,27 @@ nav.header div.menu ul.main_menu {
     display: flex;
 }
 
-nav.header div.menu ul.main_menu>li {
+nav.header div.menu ul.main_menu>li.menuList {
     display: inline-block;
     list-style: none;
     color: white;
     margin-right: 45px;
-    /* line-height: 48px; */
-    /* text-align: center; */
-    /* vertical-align: middle; */
+    
 }
 
-nav.header div.menu ul.main_menu>li>a {
+nav.header div.menu ul.main_menu>li.menuList>a {
     display: block;
     text-decoration: none;
     color: rgb(255, 255, 255);
     /* font-weight: 700; */
     line-height: 48px;
     font-size: 14px;
+    height: 48px;
+    width: 56px; 
+}
+
+nav.header div.menu ul.main_menu li.nav_logo{
+    margin-left: 140px;
 }
 
 nav.header div.menu ul.main_menu>li>a:hover {
@@ -91,51 +96,52 @@ nav.header div.menu ul.main_menu>li.nav_logo>a img {
     list-style: none;
     width: 47.5px;
     height: 35px;
-    margin: 6px 65px 6px 140px;
+    margin: 6px 65px 6px 0px;
     line-height: 48px;
 
 }
 
-/* svg */
-nav.header div.menu>div.nav_icons {
-    /* display: flex;
-    /* display: inline-block; */
-    /* justify-content: space-between;  */
-/* font-size: 14px; */
+nav.header div.menu ul.main_menu>li.nav_logo::marker{
+    content:none;
 }
 
-nav.header>div.menu>a.svg::before{
+/* svg */
+nav.header>div.menu>a.svg::before ::after{
     /* display: flex;
     justify-content: space-between; */
     content: "";
     display: block;
     clear: both;
 }
-nav.header div.menu>a.svg {
-    display: block;
-    height: 48px;
-    width: 56px;
+nav.header div.menu>ul.main_menu>li.svgLogos>a.svg {
+    display: inline-block;
     font-size: 14px;
     line-height: 48px;
-    background-color:rgba(255, 255, 255, 0.3);
-    cursor: pointer ;
+    /* border: 1px black solid; */
+    margin-right: 30px;
+   
 }
 
-.mr140{
-margin-right: 140px;
+nav.header div.menu>ul.main_menu>li.svgLogos::marker{
+    content: none;
 }
 
-nav.header div.menu>a i.fas {
-    /* box-sizing: border-box; */
-    font-size: 14px;
+
+nav.header div.menu>ul.main_menu>li.svgLogos>a.svg i.fas {
+    font-size: 1.2em;
     width: 20px;
     height: 20px;
     color: white;
     line-height: 48px;
-    border: 1px black solid;
-    vertical-align: middle;
+    text-align: center;
+   
 }
 
+nav.header div.menu>ul.main_menu>li.svgLogos{
+    /* margin:0 90px 0 380px; */
+    /* float:left; */
+
+}
 
 
 
@@ -153,12 +159,12 @@ nav.header div.menu .main_menu ul {
     height: 0;
     /* width: 56px; */
     list-style: none;
-    left: 289px;
+    left: 242px;
 }
-
+/* .main_menu裡面的子目錄 裝備租借*/
 nav.header div.menu .main_menu ul.submenu_rental {
     position: absolute;
-    left: 390px;
+    left: 345px;
 }
 
 nav.header div.menu .main_menu li:hover ul {

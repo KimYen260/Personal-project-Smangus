@@ -1,1 +1,205 @@
-@import "./normalize.css"
+@import "./normalize.css";
+
+
+main{
+    font-size: 0;
+    margin: 0 auto;
+}
+
+div.section_planning {
+    width: 960px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    display: flex;
+}
+
+div.sectionBox {
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    width: 480px;
+    height: 480px;
+    padding: 44px 44px 316px 330px;
+    background-color: #1D2601;
+}
+
+
+/* letters */
+div.sectionBox span {
+    display: inline-block;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    font-size: 40px;
+    line-height: 60px;
+    color: white;
+    letter-spacing: 10px;
+}
+
+/* //-------------------greenbox----------------// */
+
+div.section_planning{
+    display: flex;
+    align-items: flex-end;
+   
+}
+
+form.planForm{
+    width:385px;
+    
+  }
+  
+  div.typeSelection{
+    display:inline-block;
+  }
+  
+  
+  div.typeSelection>label{
+    font-size:18px;
+    line-height:35px;
+  }
+  
+  div.typeSelection>label>select{
+  /*   display:block; */
+    width:385px;
+    height:40px;
+    border-radius:3px;
+     border:.5px solid black;
+  }
+  div.largeSelection{
+    display:inline-block;
+    display:flex;
+    font-size:18px;
+  }
+  
+  div.smallSelection{
+  /*   display:inline-block; */
+    width:175px;
+    height:80px;
+    border-radius:3px;
+    margin-top:5px;
+  /*   border: 1px solid black; */
+  }
+  /* 時間 */
+  div.smallSelection>label.time>input{
+    width:175px;
+    height:40px;
+    border-radius:3px;
+    border:.5px solid black;
+  }
+  /* 人數 */
+  div.smallSelection>label.people>input{
+    width:173px;
+    height:38px;
+    border-radius:3px;
+    border:.5px solid black;
+  }
+  button.btn_submit{
+    width:385px;
+    height:40px;
+    border:2px solid black;
+    border-radius:3px;
+    margin-top:10px;
+    font-size: 18px;
+    line-height: 18px;
+    /* vertical-align: middle; */
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  button.btn_submit>p{
+    font-size: 18px;
+    line-height: 18px;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .ml-30{
+    margin-left:30px;
+  }
+
+  .ml-95{
+    margin-left: 95px;
+  }
+
+  .mt-95{
+      margin-top: 95px;
+  }
+
+  .mb-95{
+    margin-bottom:95px;
+  }
+
+  /* ---------------------form------------------------ */
+
+  div.logo_belt{
+      background-image: url(/images/landingpage/belt1.png);
+      height: 200px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    div.logo_belt>img{
+      display: inline-block;
+      width: 95px;
+      margin:0 auto;
+      margin-top: 52.5px;
+      left: calc(48%);
+      position: absolute;
+    }
+
+
+    div.logo_belt>span{
+      display: inline-block;
+      font-size: 14px;
+      width: 95px;
+      letter-spacing: 1.2px;
+      margin:0 auto;
+      margin-top: 140px;
+      left: calc(48.75%);
+      position: absolute;
+      font-weight: 700;
+      color: #1D2601;
+    }
+/* --------------------beltLogo--------------------------- */
+div.section_attractive_rental{
+  align-items: center;
+  display: flex;
+  width: 960px; 
+  margin:0 auto;
+  font-size: 24px;
+  flex-direction: column; 
+  
+}
+
+div.section_attractive_rental>div.products{
+  display: flex;
+  
+}
+
+div.section_attractive_rental>div.description{
+  /* box-sizing: border-box; */
+  border:1px solid black;
+  height: 24px;
+  line-height: 24px;
+  margin:0 auto;
+}
+
+div.section_attractive_rental>div>a>img{
+  margin:0 auto;
+      width: 200px;
+      height: 200px;
+      /* justify-content: space-between; */
+    }
+
+    div.section_attractive_rental>div>a{
+      display: inline-block;
+      margin:0 auto;
+      vertical-align: middle;
+      /* z-index: 1; */
+      border: 1px solid black;
+      justify-content: space-between;
+    }
+
