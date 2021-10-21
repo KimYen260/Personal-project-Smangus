@@ -1,8 +1,9 @@
 @import "./normalize.css";
 
 body {
-    font-size: 0;
+    /* font-size: 0; */
     margin: 0 auto;
+    padding: 0;
     /*去除原始白邊,使滿版*/
     font-family: "Arial", Helvetica, sans-serif;
 }
@@ -36,7 +37,7 @@ nav.header div.menu {
     background-repeat: no-repeat;
     /* border: 1px solid black; */
     margin: 0;
-    display: inline-block;
+    /* display: inline-block; */
     display: flex;
     
 }
@@ -56,7 +57,7 @@ nav.header div.menu ul.main_menu {
 }
 
 nav.header div.menu ul.main_menu>li.menuList {
-    display: inline-block;
+    /* display: inline-block; */
     list-style: none;
     color: white;
     margin-right: 45px;
@@ -114,7 +115,7 @@ nav.header>div.menu>a.svg::before ::after{
     clear: both;
 }
 nav.header div.menu>ul.main_menu>li.svgLogos>a.svg {
-    display: inline-block;
+    /* display: inline-block; */
     font-size: 14px;
     line-height: 48px;
     /* border: 1px black solid; */

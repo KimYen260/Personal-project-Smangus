@@ -1,1 +1,8 @@
-@import "./normalize.css"
+@import "./normalize.css";
+
+footer {
+   box-sizing: border-box;
+    height: 450px;
+    width: 100%;
+    background: linear-gradient(to bottom, #98AB5C03, #596928A0, #4D5928E5, #4D5928 280px);
+}
