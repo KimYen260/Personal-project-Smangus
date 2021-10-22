@@ -2,7 +2,7 @@
 
 footer {
    box-sizing: border-box;
-    height: 200px;
+    height: 250px;
     width: 100%;
     background: linear-gradient(to bottom, #98AB5C03, #596928A0, #4D5928E5, #4D5928 280px);
 }
@@ -10,34 +10,52 @@ footer {
 div.regulation{
 width: 1200px;
 margin: 0 auto;
-text-decoration: none;
+padding-top: 70px;
+display: flex;
+justify-content: space-between;
+
 }
 
-div.regulation>img{
-
+div.regulation img{
     width: 50px;
 }
 
+div.regulation>div.payments>div p.title{
+    color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+    font-size: 8px;
+}
+
 div.regulation>div.reg_left{
-    width: 700px;
+    width: 500px;
 }
 
-div.regulation>div.reg_left>p.title{
-    color: lightgray;
-    font-size: 16px;
-}
 
-div.regulation>div.reg_left>.subtitle{
+
+div.regulation>div.reg_left>a{
     color: lightgray;
-    font-size: 14px;
+    font-size: 12px;
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 250px;
+    height: 100px;
+
 }
 
 
 
 div.regulation>div.payments{
+    box-sizing: border-box;
+    width: 200px;
+    height: 100px;
+    text-align: right;
 
 }
 
 div.regulation>div.payments>i{
+    padding-top: 20px;
     color: lightgray;
+    padding-top: 30px;
+    margin: 0;
 }
