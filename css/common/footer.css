@@ -2,7 +2,42 @@
 
 footer {
    box-sizing: border-box;
-    height: 450px;
+    height: 200px;
     width: 100%;
     background: linear-gradient(to bottom, #98AB5C03, #596928A0, #4D5928E5, #4D5928 280px);
+}
+
+div.regulation{
+width: 1200px;
+margin: 0 auto;
+text-decoration: none;
+}
+
+div.regulation>img{
+
+    width: 50px;
+}
+
+div.regulation>div.reg_left{
+    width: 700px;
+}
+
+div.regulation>div.reg_left>p.title{
+    color: lightgray;
+    font-size: 16px;
+}
+
+div.regulation>div.reg_left>.subtitle{
+    color: lightgray;
+    font-size: 14px;
+}
+
+
+
+div.regulation>div.payments{
+
+}
+
+div.regulation>div.payments>i{
+    color: lightgray;
 }

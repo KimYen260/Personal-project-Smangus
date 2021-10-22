@@ -243,11 +243,10 @@ div.section_ourservice>p.knowledgeInfo {
 
 div.section_classic_itinrary{
   width: 960px;
-  display: flex;
-  justify-content: space-between;
+  height: 550px;
   position: relative;
   margin: 0 auto;
-  display: flex;
+  margin-bottom: 95px;
 }
 
 div.river-tracing{
@@ -255,20 +254,30 @@ div.river-tracing{
   height: 500px;
   width: 900px;
   position: absolute;
-  border: 2px solid blue;
+  right: 300px;
+  /* border: 2px solid blue; */
   overflow: hidden;
+  z-index: 1;
 }
+div.river-tracing{
+box-shadow: -5px 20px 0px 0px rgb(173, 173, 173);
+/* z-index: -1; */
+}
+
+
 div.mountain-hiking{
  overflow: hidden;
   box-sizing: border-box;
   height: 500px;
   width: 900px;
   position: absolute;
-  border: 3px solid red;
+  top:50px;
+  left: 400px;
+ 
+  /* border: 3px solid red; */
 }
 
 div.river-tracing::after{
-  /* margin: 0 auto; */
   display: block;
   content:"";
   clear: both;
@@ -278,20 +287,13 @@ div.river-tracing::after{
   background-image: url(/images/landingpage/river.jpeg);
   background-size: 120%;
   background-repeat: no-repeat;
-   /* align-items: center; */
-  /* justify-content: center; */
-  /* vertical-align: middle; */
-  /* z-index: 0; */
+  
 }
 
 div.river-tracing::before{
-  /* margin: 0 auto; */
   display: block;
   content:"";
   clear: both;
-  /* height: 500px;
-  width: 860px; */
-  /* background-color: royalblue; */
 }
 
 div.mountain-hiking::before{  
@@ -301,7 +303,6 @@ div.mountain-hiking::before{
 }
 
 div.mountain-hiking::after{  
-  /* margin: 0 auto; */
   display: block;
   content:"";
   clear: both;
@@ -311,5 +312,76 @@ div.mountain-hiking::after{
   background-image: url(/images/travel/1_V8ZfS1rObZACGtisJN430Q.jpeg);
   background-size: 120%;
   background-repeat: no-repeat;
-  /* z-index: 1; */
+}
+
+div.triangle{
+
+}
+
+
+/* --------------trapioa--------------- */
+
+div.section_professional_team{
+  width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+div.section_professional_team span{
+  /* box-sizing: border-box; */
+  font-size: 24px;
+  width: 660px;
+}
+
+div.section_professional_team div.teamMember{
+  /* box-sizing: border-box; */
+  /* width: 960px; */
+  display: flex;
+  margin: 95px 0;
+ align-items: space-between;
+ justify-content: space-between;
+ vertical-align: middle;
+}
+
+div.section_professional_team div.teamMember>span{
+  text-align: left;
+  /* line-height: 28px; */
+  width: 400px;
+  
+}
+
+div.section_professional_team div.teamMember>img{
+border-radius: 50%;
+margin: 0 48px;
+width: 300px;
+height: 300px;
+}
+
+div.section_professional_team div.teamMember>span>p.title1,.subtitle1{
+font-size: 20px;
+box-sizing: border-box;
+padding-bottom: 45px;
+height: 28px;
+letter-spacing: 6%;
+line-height: 20px;
+margin-bottom: 20px;
+margin-top: 0px;
+}
+
+div.section_professional_team div.teamMember>span>p.centent{
+font-size: 14px;
+line-height: 19.2px;
+letter-spacing: 0.07em;
+/* margin-top: 35px; */
+box-sizing: border-box;
+}
+
+div.section_professional_team div.teamMember>span>p.centent1{
+font-size: 14px;
+line-height: 14px;
+letter-spacing: 0.06em;
+margin-top: 35px;
+margin-bottom:5px;
+box-sizing: border-box;
 }
