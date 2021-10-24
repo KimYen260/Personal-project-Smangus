@@ -1,31 +1,43 @@
-@import "./normalize.css"
+@import "./normalize.css";
 
 div.section_attractive_rental {
-    display: flex;
-    width: 960px;
-    margin: 0 auto;
-    font-size: 24px;
-    flex-direction: column;
-  }
-  
-  div.section_attractive_rental>div.products {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  div.section_attractive_rental>div.description {
-    box-sizing: border-box;
-    border: 1px solid black;
-    height: 24px;
-    line-height: 24px;
-    margin: 0 auto;
-    margin-bottom: 48px;
-  }
-  
-  div.section_attractive_rental>div>a>img {
-    /* margin: 0 auto; */
-    margin-bottom: 95px;
-    width: 200px;
-    height: 200px;
-    border: 1px solid black;
-  }
+  display: flex;
+  width: 960px;
+  height: 370px;
+  margin: 0 auto;
+  font-size: 24px;
+  flex-direction: column;
+}
+
+div.section_attractive_rental>div.products {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 95px;
+}
+
+div.section_attractive_rental>div.description {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  height: 24px;
+  line-height: 24px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+
+div.section_attractive_rental>div>a>img {
+  /* margin: 0 auto; */
+  /* margin-bottom: 95px; */
+  width: 200px;
+  height: 200px;
+  /* border: 1px solid black; */
+}
+
+div.section_attractive_rental>div>a:hover {
+  border: 1px solid lightgray;
+}
+
+div.section_attractive_rental>div>a {
+  display: block;
+  width: 200px;
+  height: 200px;
+}
