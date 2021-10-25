@@ -1,5 +1,10 @@
 @import "./normalize.css";
 
+
+.mt-300 {
+    margin-top: 300px;
+}
+
 footer {
    box-sizing: border-box;
     height: 250px;

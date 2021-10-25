@@ -1,1 +1,225 @@
-@import "./normalize.css"
+@import "./normalize.css";
+
+
+
+
+.mb-25 {
+    margin-bottom: 25px;
+}
+
+.mb-48 {
+    margin-bottom: 48px;
+}
+
+.mb-95 {
+    margin-bottom: 95px;
+}
+
+.mt-48 {
+    margin-top: 48px;
+}
+
+.mt-95 {
+    margin-top: 95px;
+}
+
+.mt-25 {
+    margin-top: 25px;
+}
+
+section div.main {
+    width: 1000px;
+    margin: 95px auto;
+    display: flex;
+}
+
+ul.right,ul.left {
+    width: 450px;
+    padding: 0;
+    margin: 0 50px;
+    list-style: none;
+    /* border: 2px solid green; */
+}
+
+/* ul.left>li{
+    margin-bottom: 25px;
+} */
+
+ul.left>li img {
+    width: 250px;
+    background-size: cover;
+}
+
+ul.left>li img.map {
+    width: 450px;
+    background-size: cover;
+
+}
+
+ul.left>li img.right {
+    float: right;
+    padding: 0;
+}
+
+/* --------------------------------leftSection---------------------- */
+
+
+
+
+/* --------------------------------knowledgeInfo---------------------- */
+/* div.section_ourservice {
+    width: 700px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 95px;
+}
+
+div.section_ourservice h4 {
+    box-sizing: border-box;
+    font-weight: 900;
+    line-height: 22px;
+    color: #000;
+    width: 100px;
+    height: 30px;
+    margin-right: 120px;
+    align-content: center;
+}
+
+
+div.section_ourservice>p.knowledgeInfo {
+    box-sizing: border-box;
+    width: 330px;
+    height: 100px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000;
+} */
+
+/* --------------------------------knowledgeInfo---------------------- */
+
+li.travel-title>div.caption {
+    font-size: 14px;
+    height: 10px;
+}
+
+li.travel-title>.title {
+    font-size: 32px;
+    font-family: ;
+    padding: 0;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+li.travel-title>.description {
+    width: 425px;
+    height: 45px;
+    display: flex;
+    align-items: flex-end;
+}
+
+div.description>div.price{
+    width: 180px;
+    height: 37px;
+    display: flex;
+    align-items: baseline;
+    /* justify-content:; */
+}
+
+div.price>div.unit {
+    font-size: 14px;
+    height: 10px;
+    padding-right:10px;
+}
+
+div.price>div.dollar {
+    font-size: 38px;
+    height: 40px;
+}
+
+div.description>div.sizeArea {
+    font-size: 14px;
+    height: 45px;
+    width:180px ;
+    display: flex;
+    align-items: flex-end;
+}
+
+div.sizeArea>div.subtitle {
+    /* font-weight: bolder; */
+    font-size: 18px;
+
+}
+
+div.sizeArea>div.size-select {
+    padding-left: 10px;
+
+}
+
+select.custom_select{
+    /* 清除掉預設外觀 */
+    appearance: none;
+    
+    outline: none;
+    background: none;
+    border: 1px solid gray;
+    width: 150px;
+    padding: 5px 10px;
+    
+    background-image: url("http://cdn.onlinewebfonts.com/svg/img_338455.png");
+    background-repeat: no-repeat;
+    background-size: 12px;
+    
+    background-position: right 8px center; /* 這是：水平方向是距離右側 8px 的意思；然後垂直方向是 center */
+    
+    cursor: pointer;
+    
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+/* ---------下拉樣式---------- */
+a.btn-b {
+    display: block;
+    text-decoration: none;
+    /* border: 1.5px solid rgb(0, 0, 0); */
+}
+
+a.btn-b:hover {
+    display: block;
+    color: white;
+    background-color: #3B8DBF;
+    border-radius: 70px 70px;
+    height: 60px;
+    width: 440px;
+}
+
+
+a.btn-b>button.btn-explor {
+    height: 60px;
+    width: 440px;
+    font-size: 24px;
+    line-height: 48px;
+    border-radius: 70px 70px;
+    border: 1.8px solid rgb(0, 0, 0);
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+}
+
+ul.proposal-list{
+list-style:disc;
+width: 400px;
+margin: 0;
+padding-left: 20px;
+font-size: 14px;
+line-height: 19.2px;
+}
+
+ul.proposal-list>li.subtitle{
+    font-weight: bold;
+}
+li.proposal>div.bottom-line{
+    width:420px;
+    height: 3px;
+    border-top: 1px solid black;
+}
