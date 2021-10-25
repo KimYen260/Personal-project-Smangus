@@ -83,14 +83,14 @@ nav.header div.menu ul.main_menu li.nav_logo{
 
 nav.header div.menu ul.main_menu>li>a:hover {
     text-decoration: none;
-    color: #3B8DBF;
+    /* color: #3B8DBF; */
     font-weight: 700;
     /* border-bottom: 2px solid #3B8DBF ; */
 }
 
 nav.header div.menu ul.main_menu>li>a:visited {
     text-decoration: none;
-    color: #ffffff;
+    color:  #3B8DBF;
     font-weight: 700;
 }
 
@@ -157,7 +157,7 @@ nav.header div.menu .main_menu ul {
     font-size: 14px;
     position: absolute;
     transition: all .5s ease;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     top: 48px;
     height: 0;
     /* width: 56px; */
@@ -186,8 +186,13 @@ nav.header div.menu .main_menu ul a {
 }
 
 nav.header div.menu .main_menu ul a:hover {
-    color: black;
-    text-decoration: none;
+    display: block;
+    text-decoration: 15px line-through #217bb385 ;
+    width:56px;
+    font-weight: bolder;
+   color: rgb(255, 255, 255);
+   transition: text-decoration .5s;
+   /* z-index: 0; */
 }
 
 

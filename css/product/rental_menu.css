@@ -1,1 +1,222 @@
-@import "./normalize.css"
+@import "./normalize.css";
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.ml-35 {
+    margin-left:35px;
+}
+
+.ml-95 {
+    margin-left:95px;
+}
+
+.mt-95 {
+    margin-top: 95px;
+}
+
+.mb-95 {
+    margin-bottom: 95px;
+}
+
+.mb-300 {
+    margin-bottom: 300px;
+}
+
+.mt-48{
+    margin-top: 48px;
+}
+
+.mb-48{
+    margin-bottom: 48px;
+}
+
+div.main-catagory{
+    display: flex;
+}
+
+
+
+div.side-bar div.side-block {
+    box-sizing: border-box;
+    color: white;
+    width: 330px;
+    height: 220px;
+    /* font-size: 40px; */
+    background-color: #1D2601;
+    padding: 45px 28px 75px 180px;
+}
+
+div.side-block span {
+    box-sizing: border-box;
+    height: 100px;
+    width: 100px;
+    font-size: 40px;
+    line-height: 65px;
+    color: white;
+    letter-spacing: 18px;
+}
+
+/* -----------------greenBlock---------------- */
+
+div.catagory {
+    box-sizing: border-box;
+    height: 500px;
+    color: black;
+    font-size: 16px;
+}
+
+ul.catagory-lists{
+    list-style:none;
+}
+
+ul.up{
+    margin-bottom: 40px;
+}
+
+li.title{
+    font-size: 18px;
+    padding: 15px 0;
+    font-weight: 900;
+}
+
+ul.catagory-lists>li{
+    line-height: 28px;
+    padding: 8;
+    width:80px;
+    height:30px;
+    color: black;
+}
+
+ul.catagory-lists>li>a{
+    display: block;
+    width:70px;
+    height:24px;
+    /* border:1px solid black; */
+    text-decoration: none;
+    color: black;
+}
+
+ul.catagory-lists>li>a:hover{
+    display: block;
+    width:70px;
+    height:10px;
+    border-bottom:10px solid #1c82c29a;
+    transition: .2s;
+}
+
+/* -------------catagory------------------ */
+
+div.main-catagory{
+    box-sizing: border-box;
+max-width: 1040px;
+height: 1050px;
+display: flex;
+flex-wrap: wrap;
+justify-content:space-evenly;
+gap:40px 35px;
+margin:95px auto;
+}
+
+div.mid-container{
+    display: flex;
+}
+
+div.cell-imgL{
+    /* background-image: url(/images/pagecover/CO120-4bx_2048x2048.jpeg); */
+    background-image: url(/images/pagecover/camping-gadgets.jpeg);
+max-height: 565px;
+width: 710px;
+background-size: 135%;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+div.cell {
+    display: block;
+    /*   box-sizing:border-box; */
+    width: 225px;
+    height: 275px;
+    /* border: 1px solid lightgray; */
+    display: flex;
+    justify-content: center;
+    /* margin-right: 35px; */
+    
+  }
+  
+  div.cell a > img.shoesC {
+    max-height: 175px;
+    padding-bottom: 10px;
+    /*   border:1px solid black; */
+    vertical-align: middle;
+  }
+  
+  div.cell a > img.shoesH {
+    opacity:0;
+    max-height: 175px;
+    padding-bottom: 10px;
+    /*   border:1px solid black; */
+    vertical-align: middle;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  div.cell a > ul.description {
+    list-style: none;
+    color: black;
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+  div.cell a {
+    text-decoration: none;
+    position: relative;
+  }
+  
+  div.cell a:hover > img.shoesH {
+    opacity:1;
+    max-height: 175px;
+    padding-bottom: 10px;
+    /*   border:1px solid black; */
+    vertical-align: middle;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: opacity 1s;
+  }
+  
+  div.cell a > ul.description > li div.line {
+    border-top: 1px solid black;
+    padding-top: 20px;
+  }
+  
+  div.cell a > ul.description > li.title {
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 0px;
+    
+    /*   letter-spacing:1px; */
+  }
+  
+  div.cell a > ul.description > li.price {
+    display: flex;
+    font-weight: bolder;
+    /*   font-size:18px; */
+    align-items: baseline;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  
+  div.cell a > ul.description > li.price div.unit {
+    font-size: 14px;
+  }
+  
+  div.cell a > ul.description > li.price div.dollar {
+    font-size: 18px;
+    padding-left: 5px;
+
+    /* ----------------cell---------------- */
