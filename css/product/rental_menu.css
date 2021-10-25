@@ -35,6 +35,7 @@
 
 div.main-catagory{
     display: flex;
+    margin: 0 auto;
 }
 
 
@@ -126,11 +127,22 @@ div.mid-container{
 
 div.cell-imgL{
     /* background-image: url(/images/pagecover/CO120-4bx_2048x2048.jpeg); */
-    background-image: url(/images/pagecover/camping-gadgets.jpeg);
+background-image: url(/images/pagecover/camping-gadgets.jpeg);
 max-height: 565px;
 width: 710px;
 background-size: 135%;
 background-size: cover;
+background-repeat: no-repeat;
+}
+
+div.cell-imgS{
+background-image: url(/images/pagecover/CO120-4bx_2048x2048.jpeg);
+/* background-image: url(/images/pagecover/camping-gadgets.jpeg); */
+max-height: 275px;
+width: 440px;
+background-size: 200%;
+background-position: right -320px bottom -250px;
+/* background-size: cover; */
 background-repeat: no-repeat;
 }
 
