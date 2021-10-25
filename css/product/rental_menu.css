@@ -123,6 +123,7 @@ margin:95px auto;
 
 div.mid-container{
     display: flex;
+    justify-content: space-between;
 }
 
 div.cell-imgL{
