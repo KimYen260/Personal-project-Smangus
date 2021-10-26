@@ -106,12 +106,12 @@ li.travel-title>div.caption {
 }
 
 li.travel-title>.title {
-    font-size: 36px;
-    font-family: ;
+    font-size: 30px;
+    font-family: 'Noto Serif TC', serif;
     padding: 0;
     /* margin: 0; */
     font-weight: 900;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
 }
 
 li.travel-title>.description {
@@ -124,6 +124,7 @@ div.description>div.price {
     width: 178px;
     height: 37px;
     display: flex;
+    align-items: baseline;
 }
 
 div.price>div.unit {
@@ -158,16 +159,6 @@ a.btn-b {
     /* border: 1.5px solid rgb(0, 0, 0); */
 }
 
-a.btn-b:hover {
-    display: block;
-    color: white;
-    background-color: #3B8DBF;
-    border-radius: 70px 70px;
-    height: 60px;
-    width: 440px;
-}
-
-
 a.btn-b>button.btn-explor {
     height: 60px;
     width: 440px;
@@ -176,7 +167,17 @@ a.btn-b>button.btn-explor {
     border-radius: 70px 70px;
     border: 1.8px solid rgb(0, 0, 0);
     background-color: transparent;
-    color: rgb(0, 0, 0);
+    /* color: rgb(255, 255, 255); */
+    cursor: pointer;
+}
+
+a.btn-b:hover {
+    display: block;
+    color: white;
+    background-color: #3B8DBF;
+    border-radius: 70px 70px;
+    height: 60px;
+    width: 440px;
 }
 
 ul.proposal-list{

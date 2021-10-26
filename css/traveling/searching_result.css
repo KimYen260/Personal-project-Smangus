@@ -79,6 +79,8 @@ div.searching-key{
     padding-top:20px;
     font-weight:900;
     text-align:justify;
+    font-family: 'Noto Serif TC', serif;
+letter-spacing: 2px;
   }
   
   ul.descriptionUl>li.description{

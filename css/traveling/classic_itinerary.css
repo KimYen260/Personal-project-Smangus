@@ -31,6 +31,8 @@ ul.cards{
     line-height: 60px;
     color: white;
     letter-spacing: 10px;
+    font-family: 'Noto Serif TC', serif;
+
   }
 
   /*------------card2------------------- */
@@ -84,11 +86,12 @@ ul.cards{
   }
   
   p.title {
-    font-size: 44px;
-    font-family: ;
+    font-size: 30px;
     padding: 0;
     margin: 0;
-    font-weight:900;
+    font-weight:500;
+    font-family: 'Noto Serif TC', serif;
+    letter-spacing: 5px;
   }
   
   a.btn-a{
@@ -113,6 +116,7 @@ ul.cards{
     border: 1.5px solid white;
     background-color:transparent;
     color:white;
+    cursor: pointer;
   }
   
   div.bottom-sec {

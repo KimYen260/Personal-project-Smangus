@@ -204,6 +204,7 @@ a.btn-b>button.btn-explor {
     border: 1.8px solid rgb(0, 0, 0);
     background-color: transparent;
     color: rgb(0, 0, 0);
+    cursor: pointer;
 }
 
 ul.proposal-list{

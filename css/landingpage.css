@@ -1,7 +1,9 @@
 @import "./normalize.css";
 
 
-
+*{
+  font-family: "Arial", Helvetica, serif;
+}
 
 nav.header{
   position: relative;
@@ -95,6 +97,7 @@ div.sectionBox span {
   box-sizing: border-box;
   /* border: 1px solid black; */
   font-size: 40px;
+  font-family: 'Noto Serif TC', serif;
   line-height: 60px;
   color: white;
   letter-spacing: 10px;
@@ -171,6 +174,7 @@ button.btn_submit {
   font-size: 18px;
   line-height: 18px;
   text-align: center;
+  cursor: pointer;
 }
 
 button.btn_submit>p {
@@ -324,9 +328,9 @@ div.river-tracing{
   overflow: hidden;
   z-index: 1;
 }
-div.river-tracing{
+/* div.river-tracing{
   box-shadow: -40px 1px 8px 1px rgb(173, 173, 173);
-}
+} */
 
 
 div.mountain-hiking{
@@ -341,46 +345,80 @@ div.mountain-hiking{
   /* border: 3px solid red; */
 }
 
-div.river-tracing::after{
+div.river-tracing{
   display: block;
-  content:"";
-  clear: both;
   height: 500px;
   width: 860px;
   -webkit-mask-image: url(/images/landingpage/Rectangle\ 1.png);
   background-image: url(/images/landingpage/river.jpeg);
   background-size: 120%;
   background-repeat: no-repeat;
-  
 }
 
-div.river-tracing::before{
+div.river-tracing span{
+  /* border: 3px solid white; */
+  font-size: 32px;
+  color:white;
+  font-family: 'Noto Serif TC', serif;
+  -webkit-writing-mode: vertical-lr;
+writing-mode: vertical-lr;
+position: absolute;
+/* position: relative; */
+top:230px;
+left:350px;
+/* line-height: px; */
+letter-spacing: 10px;
+
+}
+
+/* 
+div.mountain-hiking span::after, div.river-tracing span::after{
   display: block;
   content:"";
   clear: both;
-}
+  padding:30px 0px; 
+} */
 
-div.mountain-hiking::before{  
-  display: block;
-  content:"";
-  clear: both;
-}
 
-div.mountain-hiking::after{  
+div.mountain-hiking{  
   display: block;
-  content:"";
-  clear: both;
   height: 500px;
   width: 800px;
   -webkit-mask-image: url(/images/landingpage/Rectangle\ 2.png);
   background-image: url(/images/travel/1_V8ZfS1rObZACGtisJN430Q.jpeg);
   background-size: 120%;
   background-repeat: no-repeat;
+  position: relative;
+
 }
 
-/* div.triangle{
+div.mountain-hiking span{ 
+  /* border: 3px solid white; */
+  font-size: 30px;
+  color:white;
+  font-family: 'Noto Serif TC', serif;
+  -webkit-writing-mode: vertical-lr;
+writing-mode: vertical-lr;
+position: absolute;
+top:190px;
+left:390px;
+/* line-height: px; */
+letter-spacing: 10px;
+ }
 
-} */
+span.triangle1{
+  display: inline-block;
+  border-left: 38px solid transparent;
+  border-right: 73px solid transparent;
+  border-top: 0px solid orange;
+  border-bottom: 37px solid #3478a391;
+  transform: rotate(-26deg); 
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top:490px;
+  left:385px;
+}
 
 
 /* --------------trapioa--------------- */
@@ -396,6 +434,7 @@ div.section_professional_team span{
   /* box-sizing: border-box; */
   font-size: 24px;
   width: 660px;
+  font-family: 'Noto Serif TC', serif;
 }
 
 div.section_professional_team div.teamMember{
@@ -431,6 +470,7 @@ letter-spacing: 6%;
 line-height: 20px;
 margin-bottom: 20px;
 margin-top: 0px;
+font-family: 'Noto Serif TC', serif;
 }
 
 div.section_professional_team div.teamMember>span>p.centent{
