@@ -25,20 +25,19 @@ div.section_attractive_rental>div.description {
   margin-bottom: 48px;
 }
 
-div.section_attractive_rental>div>a>img {
-  /* margin: 0 auto; */
-  /* margin-bottom: 95px; */
+/* div.section_attractive_rental>div>a>img {
   width: 200px;
   height: 200px;
-  /* border: 1px solid black; */
-}
+  
+} */
 
 div.section_attractive_rental>div>a:hover{
   border: 1px solid lightgray;
 }
 
 div.section_attractive_rental>div>a {
-  display: block;
+  /* display: block; */
   width: 200px;
   height: 200px;
+  border: 1px solid transparent;
 }
