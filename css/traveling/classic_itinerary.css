@@ -103,6 +103,7 @@ ul.cards{
   /*   border:3px solid red; */
   background-color:#3B8DBF;
     border-radius:50px 50px;
+    /* border:1px solid transparent; */
   }
   
   
@@ -117,6 +118,10 @@ ul.cards{
     background-color:transparent;
     color:white;
     cursor: pointer;
+  }
+
+  button.btn-explor:hover{
+    border:1px solid transparent; 
   }
   
   div.bottom-sec {

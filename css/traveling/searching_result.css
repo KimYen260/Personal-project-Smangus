@@ -28,8 +28,13 @@
 section.searching-result{
     width: 930px;
     margin:0 auto;
+}
+
+section.searching-result>div:last-child{
+  margin-bottom:200px;
 
 }
+
 div.searching-key{
     display:flex;
     width: 930px;
@@ -41,30 +46,35 @@ div.searching-key{
   
   div.list-descriptions{
     display:flex;
-    width: 930px;
-    height: 350px;
     border-bottom:2px solid rgb(233, 233, 233);
+    padding-bottom: 25px;
   }
   
   div.list-descriptions>a.aList{
+    display: block;
+    padding:0 0 0 30px;
     text-decoration:none;
     color:black;
-    width:455px;
-    height:325px;
-    /* border:1px solid black; */
+    border-bottom: 1.8px;
+    
   }
   div.list-descriptions>a.aList:hover{
-    color:white;
-    background:rgba(122, 122, 122, 0.603);
-    height:325px;
+    color:rgb(0, 0, 0);
+    /* background:rgba(122, 122, 122, 0.603); */
+    /* height:325px; */
     border-radius: 0 5px 5px 0;
-    transition: background 1s;
+    border-top: 1.8px solid rgba(122, 122, 122, 0.603);
+    border-right: 1.8px solid rgba(122, 122, 122, 0.603);
+    border-bottom: 1.8px solid rgba(122, 122, 122, 0.603);
+    /* transition: border 1s; */
   }
   
   div.list-descriptions>img.left-img{
-    width:500px;
-    height:325px;
+    display: block;
+    max-width:500px;
+    min-height:325px;
     border-radius:8px;
+    background-size: cover;
   }
   
   ul.descriptionUl{
@@ -99,6 +109,7 @@ letter-spacing: 2px;
   }
   
   ul.descriptionUl>li>ul.description-inside{
+    display: block;
     list-style:disc;
     padding-left:20px;
     padding-bottom:20px;
@@ -113,8 +124,8 @@ letter-spacing: 2px;
     justify-content:flex-end;
     margin-right:10px;
     align-items:baseline;
-    padding-bottom:60px;
-    padding-right: 20px;
+    /* padding-bottom:60px;
+    padding-right: 20px; */
   }
   
   li.price div.caption{

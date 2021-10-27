@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+.mt-25{
+    margin-top: 25px;
+}
+
 
 .ml-35 {
     margin-left:35px;
@@ -39,6 +43,7 @@
 
 div.main-catagory{
     display: flex;
+    margin-bottom: 200px;
 }
 
 div.side-bar div.side-block {
@@ -119,7 +124,7 @@ ul.catagory-lists>li>a:hover{
 div.section{
 box-sizing: border-box;
 max-width: 1040px;
-height: 1050px;
+min-height: 1050px;
 display: flex;
 flex-wrap: wrap;
 justify-content:space-evenly;
@@ -127,6 +132,10 @@ gap:40px 35px;
 margin:95px auto;
 
 }
+
+/* div.section>div:last-child{
+    margin-bottom: 300px;
+} */
 
 
 div.mid-container{
