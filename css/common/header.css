@@ -117,7 +117,6 @@ nav.header>div.menu>a.svg::before ::after{
     clear: both;
 }
 nav.header div.menu>ul.main_menu>li.svgLogos>a.svg {
-    /* display: inline-block; */
     font-size: 14px;
     line-height: 48px;
     /* border: 1px black solid; */

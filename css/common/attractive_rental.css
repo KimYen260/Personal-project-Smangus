@@ -25,11 +25,11 @@ div.section_attractive_rental>div.description {
   margin-bottom: 48px;
 }
 
-/* div.section_attractive_rental>div>a>img {
+div.section_attractive_rental>div>a>img {
   width: 200px;
   height: 200px;
   
-} */
+}
 
 div.section_attractive_rental>div>a:hover{
   border: 1px solid lightgray;
