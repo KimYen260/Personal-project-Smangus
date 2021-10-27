@@ -123,20 +123,20 @@ ul.catagory-lists>li>a:hover{
 
 div.section{
 box-sizing: border-box;
-max-width: 1040px;
+max-width: 1200px;
 min-height: 1050px;
 display: flex;
 flex-wrap: wrap;
 justify-content:space-evenly;
 gap:40px 35px;
-margin:95px auto;
+position: relative;
+transform: translateY calc(100%-425px);
 
 }
 
 /* div.section>div:last-child{
     margin-bottom: 300px;
 } */
-
 
 div.mid-container{
     display: flex;
@@ -149,9 +149,9 @@ div.mid-container{
 
 div.cell-imgL{
     /* background-image: url(/images/pagecover/CO120-4bx_2048x2048.jpeg); */
-background-image: url(/images/pagecover/camping-gadgets.jpeg);
-max-height: 565px;
-width: 710px;
+background-image: url(../../images/pagecover/camping-gadgets.jpeg);
+min-width: 800px;
+margin-right:48px;
 background-size: 135%;
 background-size: cover;
 background-repeat: no-repeat;
@@ -159,10 +159,11 @@ background-repeat: no-repeat;
 }
 
 div.cell-imgS{
-background-image: url(/images/pagecover/CO120-4bx_2048x2048.jpeg);
+background-image: url(../../images/pagecover/CO120-4bx_2048x2048.jpeg);
 /* background-image: url(/images/pagecover/camping-gadgets.jpeg); */
 max-height: 275px;
-width: 440px;
+min-width: 750px;
+margin-left: 48px;
 background-size: 200%;
 background-position: right -320px bottom -250px;
 /* background-size: cover; */
@@ -253,5 +254,15 @@ div.cell {
   div.cell a > ul.description > li.price div.dollar {
     font-size: 18px;
     padding-left: 5px;
+  }
+    /* ----------------cell---------------- */              
 
-    /* ----------------cell---------------- */
+
+div.page-number{
+    margin:95px auto;
+}
+
+/* div.main-section{
+    display: flex;
+    flex-direction: column;
+} */
