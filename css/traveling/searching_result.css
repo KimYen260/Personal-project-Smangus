@@ -55,7 +55,8 @@ div.searching-key{
     padding:0 0 0 30px;
     text-decoration:none;
     color:black;
-    border-bottom: 1.8px;
+    /* border-bottom: 1.8px; */
+    border:2px solid transparent;
     
   }
   div.list-descriptions>a.aList:hover{
@@ -63,16 +64,16 @@ div.searching-key{
     /* background:rgba(122, 122, 122, 0.603); */
     /* height:325px; */
     border-radius: 0 5px 5px 0;
-    border-top: 1.8px solid rgba(122, 122, 122, 0.603);
-    border-right: 1.8px solid rgba(122, 122, 122, 0.603);
-    border-bottom: 1.8px solid rgba(122, 122, 122, 0.603);
+    border-top: 2px solid rgba(122, 122, 122, 0.603);
+    border-right: 2px solid rgba(122, 122, 122, 0.603);
+    border-bottom: 2px solid rgba(122, 122, 122, 0.603);
     /* transition: border 1s; */
   }
   
   div.list-descriptions>img.left-img{
     display: block;
     max-width:500px;
-    min-height:325px;
+    /* min-height:325px; */
     border-radius:8px;
     background-size: cover;
   }
