@@ -9,11 +9,12 @@ footer {
    box-sizing: border-box;
     height: 250px;
     width: 100%;
+
     background: linear-gradient(to bottom, #98AB5C03, #596928A0, #4D5928E5, #4D5928 280px);
 }
 
 div.regulation{
-width: 1200px;
+width: 100%;
 margin: 0 auto;
 padding-top: 70px;
 display: flex;
@@ -33,7 +34,9 @@ div.regulation>div.payments>div p.title{
 }
 
 div.regulation>div.reg_left{
-    width: 500px;
+    width: 100%;
+    max-width:400px;
+    padding-left: 10%;
 }
 
 
@@ -52,9 +55,10 @@ div.regulation>div.reg_left>a{
 
 div.regulation>div.payments{
     box-sizing: border-box;
-    width: 200px;
+    width: 400px;
     height: 100px;
     text-align: right;
+    padding-right: 10%;
 
 }
 

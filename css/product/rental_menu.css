@@ -44,6 +44,7 @@
 div.main-catagory{
     display: flex;
     margin-bottom: 200px;
+    width: 100%;
 }
 
 div.side-bar div.side-block {
@@ -122,16 +123,18 @@ ul.catagory-lists>li>a:hover{
 /* -------------catagory------------------ */
 
 div.section{
-box-sizing: border-box;
+/* box-sizing: border-box; */
+width: 100%;
 max-width: 1200px;
-min-height: 1050px;
+height: 1050px;
+margin: 0 auto;
 display: flex;
 flex-wrap: wrap;
 justify-content:space-evenly;
 gap:40px 35px;
 position: relative;
-transform: translateY calc(100%-425px);
-
+transform: translateX(calc(100%-425px));
+border: 1px solid black;
 }
 
 /* div.section>div:last-child{
@@ -143,15 +146,17 @@ div.mid-container{
     justify-content: space-between;
     box-sizing: border-box;
     /* border: 1px solid black; */
-    width: 980px;
+    width: 100%;
     /* position:absolute; */
 }
 
 div.cell-imgL{
     /* background-image: url(/images/pagecover/CO120-4bx_2048x2048.jpeg); */
 background-image: url(../../images/pagecover/camping-gadgets.jpeg);
-min-width: 800px;
-margin-right:48px;
+width: 100%;
+max-height: 500px;
+margin-right:20px;
+margin-top:80px;
 background-size: 135%;
 background-size: cover;
 background-repeat: no-repeat;
