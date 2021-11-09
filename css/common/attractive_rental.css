@@ -2,41 +2,75 @@
 
 div.section_attractive_rental {
   display: flex;
-  width: 960px;
+  width: 1000px;
   height: 370px;
   margin: 0 auto;
   font-size: 24px;
-  font-family: 'Noto Serif TC', serif;
   flex-direction: column;
 }
+div.viewPanel{
+  display: flex;
+  width: 100%;
+}
 
-div.section_attractive_rental>div.products {
+div.wrap {
   display: flex;
   justify-content: space-between;
   margin-bottom: 95px;
 }
 
-div.section_attractive_rental>div.description {
+div.description {
   box-sizing: border-box;
   height: 24px;
   line-height: 24px;
   margin: 0 auto;
   margin-bottom: 48px;
+  font-family: 'Noto Serif TC', serif;
 }
 
-div.section_attractive_rental>div>a>img {
-  width: 200px;
-  height: 200px;
-  
-}
-
-div.section_attractive_rental>div>a:hover{
-  border: 1px solid lightgray;
-}
-
-div.section_attractive_rental>div>a {
-  /* display: block; */
+div.wrap>div.products>a,img.att-products {
   width: 200px;
   height: 200px;
   border: 1px solid transparent;
 }
+
+div.wrap div.products a:hover>img.att-products{
+  width: 200px;
+  height: 200px;
+  border: 1px solid lightgray;
+}
+
+#btnLeft{
+  margin: 50px auto;
+  color:rgb(7, 7, 7);
+  font-size:24px;
+  font-weight: bold;
+  border-radius: 60px;
+  background-color: rgb(229, 232, 236);
+  width: 1.75rem;
+  height: 1.75rem;
+
+  /* position:absolute;
+  top: 50%;
+  left: 7%; */
+}
+
+#btnRight{
+  margin: 50px auto;
+  color:rgb(8, 8, 8);
+  font-size:24px;
+  font-weight: bold;
+  border-radius: 60px;
+  background-color:rgb(229, 232, 236);
+  width: 1.75rem;
+  height: 1.75rem;
+  /* position:absolute;
+  top: 50%;
+  right: 7%; */
+}
+
+#btnLeft[disabled], #btnRight[disabled]{
+  color:rgba(54, 55, 56, 0.534);
+  font-size:24px;
+  font-weight:bold;
+}    

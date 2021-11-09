@@ -1,14 +1,16 @@
 @import "./normalize.css";
 
 
-/* div.side-bar{
-    
-} */
+
 * {
     padding: 0;
     margin: 0;
 }
 
+
+.mr-95{
+  margin-right: 95px;
+}
 
 .ml-35 {
     margin-left:35px;
@@ -42,7 +44,9 @@ div.main-catagory{
     display: flex;
 }
 
-
+/* div.side-bar{
+    
+} */
 
 div.side-bar div.side-block {
     box-sizing: border-box;
@@ -117,26 +121,33 @@ ul.catagory-lists>li>a:hover{
 /* -------------catagory------------------ */
 
 div.products{
-box-sizing: border-box;
-max-width: 1040px;
-height: 1050px;
-display: flex;
-flex-wrap: wrap;
-justify-content:space-evenly;
-gap:40px 35px;
-margin:95px auto;
-}
+  /* box-sizing: border-box; */
+  width: 100%;
+  max-width: 1200px;
+  min-height: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  gap:40px 35px;
+  position: relative;
+  transform: translateX(calc(100%-425px));
+  border: 1px solid black;
+  overflow: hidden;
+  }
 /* ----------------parentContainer------------- */
 
 div.cell {
     display: block;
     /*   box-sizing:border-box; */
-    width: 225px;
+    width: 100%;
+    max-width: 225px;
     height: 275px;
     /* border: 1px solid lightgray; */
     display: flex;
     justify-content: center;
     /* margin-right: 35px; */
+    
     
   }
   

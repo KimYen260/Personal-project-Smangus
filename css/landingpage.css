@@ -295,7 +295,7 @@ div.logo_belt {
   font-size: 0;
 }
 
-div.logo_belt>img {
+div.logo_belt>img.logo {
   top: -20px;
   width: 90px;
   margin-top: 52.5px;
