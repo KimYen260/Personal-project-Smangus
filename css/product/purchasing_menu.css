@@ -42,11 +42,13 @@
 
 div.main-catagory{
     display: flex;
+    width:100%;
+    border: 1px solid rgb(41, 29, 218);
 }
 
-/* div.side-bar{
-    
-} */
+div.side-bar{
+    border:1px solid rgb(58, 184, 19);
+}
 
 div.side-bar div.side-block {
     box-sizing: border-box;
