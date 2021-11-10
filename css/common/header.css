@@ -21,6 +21,20 @@ div.top_nav {
     box-sizing: border-box;
 }
 
+/* @media screen and ( min-width: 1400px){
+    div.top_nav{
+      width:100%;
+      min-width:1200px;
+    }
+    }
+@media screen and (min-width: 1200px) and ( max-width: 1399.98px){
+    div.top_nav {
+        width:1140px;
+        padding: 0 8em 0 1em;
+    }
+    } */
+
+
 div.top_nav>a {
     display: block;
     float: right;
@@ -28,7 +42,6 @@ div.top_nav>a {
     /*清除浮動*/
     align-content: center;
     line-height: 45px;
-    
     text-decoration: none;
     color: whitesmoke;
 }
