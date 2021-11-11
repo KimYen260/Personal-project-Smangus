@@ -8,32 +8,103 @@ body {
     font-family: "Arial", Helvetica, sans-serif;
 }
 
+@media all {
+    * {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        position: relative;
+    }
+}
+/* //=========選單=================// */
+nav.main_nav{
+    display: none;
+    position:absolute;
+    background-color: rgba(255, 235, 205, 0.836);
+    z-index: 9;
+}
+ul.nav_list{
+    box-sizing:border-box;
+    border:1px solid red;
+    width:330px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul.nav_list > li{
+    display: inline-block;
+    border: 1px solid blue;
+    color:#1D2601;
+  }
+  ul.nav_list > li a{
+      text-decoration: none;
+      color:#1D2601;
+  }
+  button.hamburger{
+      display:none;
+  }
+  @media screen and (min-width: 320px) and (max-width: 413.98px)  {
+    nav.main_nav{
+        display: block !important;
+        min-width:300px;
+        position:absolute;
+    }
+    ul.nav_list{
+        box-sizing:border-box;
+        width:330px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+    ul.nav_list > li{
+            display: inline-block;
+      }
+
+    button.hamburger{
+       display:block;
+    }
+    }
+  
+  @media screen and (min-width: 576px) and ( max-width: 767.98px){
+    
+    /* ul.nav_list{
+        box-sizing:border-box;
+        width:330px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      ul.nav_list > li{
+        display: inline-block;
+        border: 1px solid blue;
+      } */
+    }
+  
+  @media screen and (min-width: 768px) and ( max-width: 991.98px) {
+    /* ul.nav_list{
+        box-sizing:border-box;
+        width:330px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      ul.nav_list > li{
+        display: inline-block;
+        border: 1px solid blue;
+      } */
+  }
 /*登入或查詢*/
 div.top_nav {
     color: white;
     background-color: #1D2601;
     height: 3rem;
     width: 100%;
-    min-width: 1200px;
+    /* min-width: 1400px; */
     /*視窗大小*/
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding: 0 15em 0 1em;
     box-sizing: border-box;
 }
-
-/* @media screen and ( min-width: 1400px){
-    div.top_nav{
-      width:100%;
-      min-width:1200px;
-    }
-    }
-@media screen and (min-width: 1200px) and ( max-width: 1399.98px){
-    div.top_nav {
-        width:1140px;
-        padding: 0 8em 0 1em;
-    }
-    } */
-
 
 div.top_nav>a {
     display: block;
@@ -55,7 +126,7 @@ div.top_nav>a:hover{
 div.svgLogos{
     display: flex;
     float: right;
-    width: 14em;
+    width: 4em;
     justify-content: space-between;
 }
 
@@ -74,6 +145,81 @@ div.svgLogos>a.svg i.fas {
     line-height: 50px;
     text-align: center;
 }
+
+
+
+@media screen and (min-width: 320px) and ( max-width: 991.98px)  {
+    
+    div.top_nav {
+      display: none;
+    }
+    
+    nav.main_nav{
+     display: block;
+    }
+  }
+  
+
+@media screen and (min-width: 992px) and (max-width: 1023.98px){
+  
+    div.top_nav{
+        display: block;
+        width: 100%;
+        height: 2.8rem;
+        min-width:960px;
+        padding: 0 12em 0 1em;
+        font-size: 1rem;
+    }
+
+    div.svgLogos>a.svg i.fas {
+        font-size: 1em;
+        width: 1em;
+        height: 1em;
+        line-height: 45px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199.98px){
+  
+    div.top_nav{
+        display: block;
+        height: 2.8rem;
+        width: 100%;
+        max-width:1200px;
+        padding: 0 12em 0 1em;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1200px) and ( max-width: 1399.98px){
+    div.top_nav {
+        display: block;
+        height: 2.8rem;
+        min-width: 100%; 
+        max-width:1200px;
+        padding: 0 15em 0 1em;
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and ( min-width: 1400px){
+    div.top_nav {
+        display: block;
+        min-width: 100%; 
+        padding: 0 20em 0 1em;
+        font-size: 1.25rem;
+    }
+    div.svgLogos>a.svg i.fas {
+        font-size: 1em;
+        width: 1em;
+        height: 1em;
+        line-height: 45px;
+    }
+    }
+    
+    
+    
+
 
 /* first banner */
 nav.header div.menu {

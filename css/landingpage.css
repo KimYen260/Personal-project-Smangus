@@ -4,11 +4,12 @@
 * {
   font-family: "Arial", Helvetica, serif;
 }
+
 .hamburger{
   display:none;
 }
 
-@media screen and (max-width: 767.98px){
+@media screen and (max-width: 575.98px){
   .hamburger{
     display:inline-block;
   }
@@ -510,8 +511,8 @@ div.mountain-hiking {
   display: block;
   height: 500px;
   width: 800px;
-  -webkit-mask-image: url(/images/landingpage/Rectangle\ 2.png);
-  background-image: url(/images/travel/1_V8ZfS1rObZACGtisJN430Q.jpeg);
+  -webkit-mask-image: url(../images/landingpage/Rectangle\ 2.png);
+  background-image: url(../images/travel/1_V8ZfS1rObZACGtisJN430Q.jpeg);
   background-size: 120%;
   background-repeat: no-repeat;
   position: relative;

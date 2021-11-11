@@ -1,4 +1,4 @@
-@media screen and (max-width: 767.98px){
+@media screen and (min-width: 320px) and ( max-width: 991.98px){
 .hamburger {
     padding: 15px 15px;
     display: inline-block;
@@ -26,13 +26,15 @@
     width: 40px;
     height: 24px;
     display: inline-block;
-    position: relative; }
+    position: relative; 
+}
 
 
   .hamburger-inner {
     display: block;
     top: 50%;
-    margin-top: -2px; }
+    margin-top: -2px; 
+}
     .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
       width: 40px;
       height: 4px;
