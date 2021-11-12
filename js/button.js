@@ -10,7 +10,7 @@
   $(function(){
     $("button.hamburger").on("click", function(){
       $("button.hamburger").toggleClass("is-active");
-      $("nav.main_nav").toggle(1500);
+      $("nav.main_nav").toggle(1000);
       // console.log($("button.hamburger"));
     });
   });
