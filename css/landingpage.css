@@ -70,17 +70,26 @@ nav.header div.banner-title>p.subtitle {
   margin-top: 180px;
 }
 @media screen and (min-width: 320px) and (max-width: 413.98px)  {
-    
+ nav.header{
+        /* min-width: 300px; */
+        width:100%;
+    }
   div.menu{
     background-image: url(../images/pagecover/20_0001124_4.jpg);
-    /* height: 35%; */
-    width: 100% !important;
+    height: auto;
+    /* min-width: 100%; */
+    /* max-width: 400px; */
+    width:100%;
   }
   nav.header div.banner-title {
     width: 100%;
     text-align: center;
     margin: 0 auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+  }
+
+  nav.header div.banner-title>p.main-title{
+    text-align: center;
   }
 
   nav.header div.banner-title{
@@ -214,8 +223,7 @@ div.section_planning {
 div.sectionBox {
   /* display: inline-block; */
   box-sizing: border-box;
-  border: 1px solid rgb(0, 0, 0);
-  width: 300px;
+  /* border: 1px solid rgb(0, 0, 0); */
   height: 300px;
   padding: 44px 44px 450px 330px;
   background-color: #1D2601;
@@ -238,28 +246,29 @@ div.sectionBox span {
     
   div.section_planning {
     display:block;
-    min-width:100%;
+    width:100%;
     margin: 0 auto;
   }
-
+  
   div.sectionBox {
     display:block;
-    box-sizing: border-box;
-    background-color: #1D2601;
-    border:1px solid #1D2601;
+    background-color: #ffffff;
     padding: 0;
+    max-width: auto;
     width: 100%;
     height: auto;
     position:relative;
   }
   div.sectionBox span {
+    margin-bottom: 1.5rem;
+    color:#1D2601;
     display: block;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'Noto Serif TC', serif;
     line-height: 3.5rem;
-    color: white;
-    letter-spacing: 10px;
+    letter-spacing: .2rem;
+    max-width:100%;
     width:100%;
   }
 
@@ -296,41 +305,61 @@ div.typeSelection>label>select {
 }
 
 div.largeSelection {
-  /* display: inline-block; */
   display: flex;
   font-size: 18px;
+  margin-top: 10px;
+  justify-content: space-between;
 }
 
 div.smallSelection {
-  /*   display:inline-block; */
   width: 180px;
   height: 80px;
   border-radius: 3px;
-  margin-top: 10px;
-  /*   border: 1px solid black; */
+  padding:0;
+  margin: 0;
 }
 
 @media screen and (min-width: 320px) and (max-width: 413.98px)  {
 
   form.planForm {
-  width: 100%;
   display: block;
-  margin:0 auto;
   background-color: #1D2601;
   border:1px solid #1D2601;
-  padding:3rem 3rem;
+  width:100%;
+  margin: 0 auto;
+  padding-top:2rem;
   }
 
-  div.typeSelection, {
+  div.typeSelection {
   display: block;
+  width: 90%;
+  /* max-width: 300px; */
+  margin: 0 auto;
   }
 
   div.largeSelection{
+    width:100%;
+    display:block;
+  }
 
+  div.smallSelection label,
+  div.largeSelection label,
+  div.typeSelection label {
+    color:white;
   }
 
   div.smallSelection{
+    margin:0 1rem;
+  
+    width:90%;
+  }
 
+  div.typeSelection>label>select.selection {
+      display:block;
+    width: 100%;
+    height: 40px;
+    margin-top: 2px;
+    
   }
 
 }
@@ -345,7 +374,7 @@ div.smallSelection>label.time>input {
 
 /* 人數 */
 div.smallSelection>label.people>select {
-  width: 175px;
+  width: 178px;
   height: 42px;
   border-radius: 3px;
   border: .5px solid #9c9c9c;
@@ -382,6 +411,28 @@ button.btn_submit>p {
   vertical-align: middle;
   text-align: center;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 320px) and (max-width: 413.98px)  {
+  button.btn_submit{
+    width: 90%;
+    height: 45px;
+    margin:2rem 1rem;
+    color: white;
+    background-color: #3B8DBF;
+    border: 1px solid transparent;
+  }
+ 
+  div.smallSelection>label.time>input{
+    min-width: 286px;
+    width: 100%;
+  }
+
+  div.smallSelection>label.people>select{
+    min-width: 286px;
+    width: 100%;
+  }
+
 }
 
 /* ---------------------form------------------------ */
@@ -440,7 +491,11 @@ div.logo_belt>span {
   position: absolute;
   top: 110px;
 }
-
+@media screen and (min-width: 320px) and (max-width: 413.98px)  {
+  div.logo_belt{
+    display: none;
+  }
+}
 /* --------------------beltLogo--------------------------- */
 div.section_attractive_rental {
   display: flex;
@@ -472,6 +527,11 @@ div.section_attractive_rental>div>a>img {
   /* border: 1px solid black; */
 }
 
+@media screen and (min-width: 320px) and (max-width: 413.98px)  {
+  div.section_attractive_rental{
+    display: none;
+  }
+}
 /* --------------------------------attractiveProduct---------------------- */
 
 div.section_ourservice {
@@ -496,6 +556,14 @@ div.section_ourservice h4 {
   align-content: center;
   /* border: 1px solid black; */
 }
+@media screen and (min-width: 320px) and (max-width: 413.98px)  {
+  div.section_ourservice{
+    width: 90%;
+    margin:4.5rem auto;
+    display: block;
+    border:0px solid black;
+  }
+}
 
 div.section_ourservice>h4:after,
 h4:before {
@@ -506,8 +574,8 @@ h4:before {
 }
 
 div.section_ourservice>div.paragraph {
-  width: 600px;
-  height: 100px;
+  width: 550px;
+  height: 60px;
   padding: 0 0 25px 0;
   font-size: 16px;
   color: #000;
@@ -530,7 +598,7 @@ div.paragraph>p.knowledgeInfo {
 div.section_ourservice div.paragraph>a.knowledgeInfo {
   text-decoration: none;
   display: block;
-  padding: 50px 10px 25px 40px;
+  padding: 25px 10px 25px 40px;
   /* border:1px solid black; */
   margin: 0 auto;
   white-space: nowrap;
@@ -542,10 +610,62 @@ a.knowledgeInfo:after {
   content: "●";
   text-align: center;
   padding: 50px 50px;
-
+  
 }
 
+@media screen and (min-width: 320px) and (max-width: 413.98px)  {
+ 
+ 
+  div.section_ourservice>div.paragraph{
+    width: 80%;
+    padding: .8rem 0;
+    margin:0 auto;
+    height: 100px;
+    display:block;
+ 
+  }
 
+ div.section_ourservice>h4{
+    margin: 0 auto;
+  }
+ 
+  div.paragraph>p.knowledgeInfo{
+    overflow: hidden;
+    display: -webkit-box;
+    letter-spacing: .07rem;
+    -webkit-line-clamp: 3;
+    /*行數*/
+    -webkit-box-orient: vertical;
+    
+  
+  }
+
+  div.section_ourservice div.paragraph>a.knowledgeInfo{
+    display: block;
+    width:95%;
+    padding:1.5rem 0 .1rem;
+    
+    margin: 0 auto;
+    color:black;
+
+  }
+
+  a.knowledgeInfo:after{
+    content:"●";
+    text-align: center;
+    padding: 0 0 0 4rem ;
+    text-decoration: none;
+  }
+
+  a.knowledgeInfo:before{
+    clear: both;
+    content:"●";
+    text-align: center;
+    padding:  0  4rem 0 .5rem ;
+    text-decoration: none;
+  }
+
+}
 
 
 /* --------------------------------knowledgeInfo---------------------- */
@@ -564,15 +684,16 @@ div.river-tracing {
   width: 900px;
   position: absolute;
   right: 300px;
-  /* border: 2px solid blue; */
   overflow: hidden;
   z-index: 1;
 }
 
-/* div.river-tracing{
-  box-shadow: -40px 1px 8px 1px rgb(173, 173, 173);
-} */
+@media screen and (min-width: 320px) and (max-width: 413.98px)  {
+  div.section_classic_itinrary{
+   display:none;
+  }
 
+}
 
 div.mountain-hiking {
   overflow: hidden;
@@ -612,13 +733,6 @@ div.river-tracing span {
 
 }
 
-/* 
-div.mountain-hiking span::after, div.river-tracing span::after{
-  display: block;
-  content:"";
-  clear: both;
-  padding:30px 0px; 
-} */
 
 
 div.mountain-hiking {
@@ -688,11 +802,12 @@ div.section_professional_team div.teamMember {
   vertical-align: middle;
 }
 
+
 div.section_professional_team div.teamMember>span {
   text-align: left;
   /* line-height: 28px; */
   width: 400px;
-
+  
 }
 
 div.section_professional_team div.teamMember>img {
@@ -702,6 +817,16 @@ div.section_professional_team div.teamMember>img {
   height: 300px;
 }
 
+
+@media screen and (min-width: 320px) and (max-width: 413.98px)  {
+  
+  div.section_professional_team div.teamMember img{
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 9.375rem;
+    height: 9.375rem;
+  }
+}
 div.section_professional_team div.teamMember>span>p.title1,
 .subtitle1 {
   font-size: 20px;
@@ -733,5 +858,88 @@ div.section_professional_team div.teamMember>span>p.centent1 {
 }
 
 @media (max-width:375px){
+  
+}
+@media screen and (min-width: 320px) and (max-width: 413.98px)  {
+  div.section_professional_team{
+    width:90%;
+    max-width: 300px;
+    padding:0 ;
+    margin:0 auto ;
+  }
+  div.section_professional_team div.teamMember img{
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 6.375rem;
+    height: 6.375rem;
+    display:block;
+  }
+ 
+  div.section_professional_team div.teamMember img.guider-photo_1{
+   position: absolute;
+   top:1rem;
+   right:1rem;
+  }
 
+  div.section_professional_team div.teamMember img.guider-photo_2{
+    position: absolute;
+    top:1rem;
+    right:1rem;
+   }
+
+   div.section_professional_team div.teamMember img.guider-photo_3{
+    position: absolute;
+    top:.5rem;
+    right:1rem;
+   }
+
+
+  div.section_professional_team>span{
+    display:block;
+    width:100%;
+    max-width: 300px;
+    padding: 0 ;
+    margin:0 auto;
+    letter-spacing: .2rem;
+   
+    
+  }
+  div.section_professional_team div.teamMember>span>p{
+    display:block;
+    width:100%;
+    /* border:1px solid green; */
+   }
+  
+  div.section_professional_team div.teamMember{
+   display:block;
+   width:100%;
+   max-width:300px;
+   padding:3rem 0 1rem 0 ;
+   margin:2rem 0;
+   position: relative;
+   border-bottom:.1rem solid black;
+  }
+
+  div.section_professional_team div.teamMember:last-child{
+    border-bottom:0 solid black;
+   }
+
+  div.section_professional_team div.teamMember>span{
+    display: block;
+    width:100%;
+    
+  }
+
+  div.section_professional_team div.teamMember>span p.content{
+    overflow: hidden;
+    max-width:300px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /*行數*/
+  -webkit-box-orient: vertical;
+  }
+
+  div.section_professional_team div.teamMember>span>p.content1{
+   margin:0;
+  }
 }
