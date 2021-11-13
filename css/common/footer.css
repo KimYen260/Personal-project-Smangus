@@ -88,8 +88,7 @@ div.regulation>div.payments>i{
     }
 
     div.regulation>div.reg_left{
-      width: 100%;
-       
+        width: 100%;
         padding: 0;
     }
     div.regulation>div.reg_left>a{
@@ -101,6 +100,72 @@ div.regulation>div.payments>i{
         height: 100px;
         display:block;
         margin-bottom: 3rem;
+        
+    }
+    
+    
+    
+    div.regulation>div.payments{
+        box-sizing: border-box;
+        width: 100%;
+       height: auto;
+        text-align: center;
+        margin: 0 auto;
+      
+        padding-right: 0;
+        
+    }
+
+
+    div.regulation>div.payments img{
+        display: block;
+        width: 2rem;
+       margin: 0 auto;
+        /* text-align: center; */
+        padding:0;
+        
+    }
+    
+    div.regulation>div.payments>i{
+     display:none;
+    }
+}
+
+@media screen and (min-width: 414px) and ( max-width: 575.98px){
+
+    
+    footer {
+    background: black;
+    width:100%;
+    padding:1rem;
+    }
+
+    div.regulation{
+    display:block;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0;
+    /* justify-content: space-between; */
+    }
+
+    div.regulation img{
+        width: 3rem;
+
+    }
+
+    div.regulation>div.reg_left{
+      width: 100%;
+        padding: 0;
+    }
+    div.regulation>div.reg_left>a{
+        color: lightgray;
+        font-size: .8rem;
+        text-decoration: none;
+        box-sizing: border-box;
+        width: 100%;
+        display:block;
+        margin-bottom: 4rem;
         
     }
     
