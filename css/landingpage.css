@@ -22,6 +22,10 @@ nav.header {
   height: 480px; */
 }
 
+div.menu{
+  background-image: url(../images/pagecover/20_0001124_4.jpg);
+  width: 100%;
+}
 
 nav.header div.banner-title {
   display: inline-block;
@@ -64,8 +68,67 @@ nav.header div.banner-title>p.subtitle {
   text-align: center;
   right: 50px;
   margin-top: 180px;
-
 }
+@media screen and (min-width: 320px) and (max-width: 413.98px)  {
+    
+  div.menu{
+    background-image: url(../images/pagecover/20_0001124_4.jpg);
+    /* height: 35%; */
+    width: 100% !important;
+  }
+  nav.header div.banner-title {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid black;
+  }
+
+  nav.header div.banner-title{
+    /* position:sticky;   */
+    text-align: center;
+    /* top:200px;
+    left:100px; */
+  }
+   
+  nav.header div.banner-title>p.subtitle,div.bold-title {
+   display: none;
+  }
+
+  }
+
+@media screen and (min-width: 576px) and ( max-width: 767.98px){
+  
+  div.menu{
+    background-image: url(../images/pagecover/20_0001124_4.jpg);
+    height: 35%;
+    width: 100%;
+  }
+  nav.header div.banner-title {
+    /* display: block; */
+    /* position:sticky;  */
+    /* top:200px;
+    left:100px; */
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid black;
+  }
+  nav.header div.banner-title>p.subtitle,div.bold-title {
+   display: none;
+  }
+  div.top_nav {
+    display: none;
+  }
+  }
+
+@media screen and (min-width: 768px) and ( max-width: 991.98px) {
+ 
+  div.top_nav{
+    display:none;
+  }
+}
+
+
 /* -----------------playharderanimationshaking---------------- */
 
 nav.header div.banner-title>div.bold-title {
@@ -142,18 +205,19 @@ main {
 
 div.section_planning {
   width: 960px;
-  /* border: 1px solid red; */
-  margin: 0 auto;
   display: flex;
+  margin: 0 auto;
+  align-items: flex-end;
 }
+
 
 div.sectionBox {
   /* display: inline-block; */
   box-sizing: border-box;
   border: 1px solid rgb(0, 0, 0);
-  width: 480px;
-  height: 480px;
-  padding: 44px 44px 316px 330px;
+  width: 300px;
+  height: 300px;
+  padding: 44px 44px 450px 330px;
   background-color: #1D2601;
 }
 
@@ -170,30 +234,56 @@ div.sectionBox span {
   letter-spacing: 10px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 413.98px)  {
+    
+  div.section_planning {
+    display:block;
+    min-width:100%;
+    margin: 0 auto;
+  }
+
+  div.sectionBox {
+    display:block;
+    box-sizing: border-box;
+    background-color: #1D2601;
+    border:1px solid #1D2601;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    position:relative;
+  }
+  div.sectionBox span {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Noto Serif TC', serif;
+    line-height: 3.5rem;
+    color: white;
+    letter-spacing: 10px;
+    width:100%;
+  }
+
+  }
 /* //-------------------greenbox----------------// */
 
-div.section_planning {
-  display: flex;
-  align-items: flex-end;
-
-}
 
 form.planForm {
   width: 385px;
-
+  margin-left: 95px;
 }
+
 
 div.typeSelection {
   /* display: inline-block; */
-  margin-top: 5px;
+  margin-top: 5px ;
 }
 
 
 div.typeSelection>label {
   font-size: 18px;
   line-height: 35px;
-
-
+  
+  
 }
 
 div.typeSelection>label>select {
@@ -220,6 +310,30 @@ div.smallSelection {
   /*   border: 1px solid black; */
 }
 
+@media screen and (min-width: 320px) and (max-width: 413.98px)  {
+
+  form.planForm {
+  width: 100%;
+  display: block;
+  margin:0 auto;
+  background-color: #1D2601;
+  border:1px solid #1D2601;
+  padding:3rem 3rem;
+  }
+
+  div.typeSelection, {
+  display: block;
+  }
+
+  div.largeSelection{
+
+  }
+
+  div.smallSelection{
+
+  }
+
+}
 /* 時間 */
 div.smallSelection>label.time>input {
   width: 175px;
