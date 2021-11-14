@@ -154,6 +154,50 @@ nav.header div.banner-title>p.subtitle {
   }
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1199.98px){
+  nav.header div.banner-title {
+    display: inline-block;
+    display: flex;
+    width: 800px;
+    height: 300px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 1px solid black; */
+  }
+  
+  nav.header div.banner-title>p {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav.header div.banner-title>p.main-title {
+    color: white;
+    font-size: 30px;
+    line-height: 75px;
+    letter-spacing: .5rem;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    font-family: 'Noto Serif TC', serif;
+    margin: 0 auto;
+  
+  }
+  
+  nav.header div.banner-title>p.subtitle {
+    color: white;
+    font-size: 28px;
+    line-height: 50px;
+    letter-spacing: 5px;
+    width: 150px;
+    height: 90px;
+    text-align: center;
+    right: 3px;
+    margin-top: 180px;
+  }
+}
 
 /* -----------------playharderanimationshaking---------------- */
 
@@ -1047,6 +1091,24 @@ div.logo_belt>span {
     top: 80px;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1199.98px){
+  div.logo_belt {
+    background-image: url(../images/landingpage/belt1.png);
+    height: 120px;
+    width: 100%;
+  }
+
+  div.logo_belt>img.logo {
+    top: -20px;
+    width: 4rem;
+   
+  }
+  
+  
+  div.logo_belt>span {
+    top: 5.5rem;
+  }
+}
 /* --------------------beltLogo--------------------------- */
 div.section_attractive_rental {
   display: flex;
@@ -1096,6 +1158,11 @@ div.section_attractive_rental>div>a>img {
   }
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1199.98px){
+  div.section_attractive_rental{
+    display: none;
+  }
+}
 /* --------------------------------attractiveProduct---------------------- */
 
 div.section_ourservice {
@@ -1138,7 +1205,12 @@ div.section_ourservice h4 {
     border:0px solid black;
   }
 }
+
 @media screen and (min-width: 768px) and ( max-width: 991.98px) {
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199.98px){
 
 }
 
@@ -1509,6 +1581,94 @@ a.knowledgeInfo:after {
   }
 
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1199.98px){
+
+  div.section_ourservice{
+    max-width: 960px;
+    width:90%;
+    /* display: block; */
+    border-bottom:0px ;
+  }
+
+  div.section_ourservice>div.paragraph{
+    width: 100%;
+    max-width: 600px;
+    padding: .8rem 0;
+    margin:0 auto;
+    height: 100px;
+    /* display:block; */
+ 
+  }
+
+ div.section_ourservice>h4{
+   /* display: block; */
+    margin: 0 auto;
+    max-width: 300px;
+  }
+
+  div.section_ourservice>h4:before {
+    margin: 0 auto;
+    box-sizing: border-box;
+    clear: both;
+    content: "●";
+    display: block;
+    padding:  0 3rem 0 1rem ;
+  }
+
+  div.section_ourservice>h4:after {
+    margin: 0 auto;
+    clear: both;
+    content: "●";
+    display: block;
+    padding: 0 0rem 0 3rem ;
+  }
+
+  div.paragraph>p.knowledgeInfo {
+    max-width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: -webkit-box;
+    letter-spacing: .07rem;
+    -webkit-line-clamp: 3;
+    /*行數*/
+    -webkit-box-orient: vertical;
+  }
+
+  div.section_ourservice div.paragraph>a.knowledgeInfo{
+    display: block;
+    width:100%;
+    /* padding:1.5rem 0 .1rem; */
+    padding: 0;
+    margin: 1rem auto;
+    color:black;
+    display: flex;
+  }
+
+  a.knowledgeInfo:after{
+    clear: both;
+    content:"●";
+    display: block;
+    padding: 0 2.7rem 0 3rem ;
+   justify-content: space-between;
+    margin: 0 auto;
+    box-sizing: border-box;
+    /* border:1px solid black; */
+
+  }
+
+  a.knowledgeInfo:before{
+    clear: both;
+    content:"●";
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    padding:  0 3rem 0 2.5rem ;
+    /* border:1px solid black; */
+
+  }
+
+}
 /* --------------------------------knowledgeInfo---------------------- */
 
 div.section_classic_itinrary {
@@ -1614,7 +1774,89 @@ span.triangle1 {
   top: 490px;
   left: 385px;
 }
-
+@media screen and (min-width: 1024px) and (max-width: 1199.98px){
+  div.mountain-hiking {
+    /* overflow: hidden;
+    box-sizing: border-box; */
+    max-height: 400px;
+    max-width: 550px;
+    /* position: absolute;
+    top: 50px;
+    left: 400px; */
+  
+    /* border: 3px solid red; */
+  }
+  
+  div.river-tracing {
+    display: block;
+    height: 400px;
+    width: 560px;
+    -webkit-mask-image: url(../images/landingpage/Rectangle\ 1.png);
+    background-image: url(../images/landingpage/river.jpeg);
+    background-size: 120%;
+    background-repeat: no-repeat;
+  }
+  
+  div.river-tracing span {
+    /* border: 3px solid white; */
+    font-size: 32px;
+    color: white;
+    font-family: 'Noto Serif TC', serif;
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+    position: absolute;
+    /* position: relative; */
+    top: 230px;
+    left: 350px;
+    /* line-height: px; */
+    letter-spacing: 10px;
+  
+  }
+  
+  
+  div.mountain-hiking {
+    display: block;
+    height: 500px;
+    width: 800px;
+    -webkit-mask-image: url(../images/landingpage/Rectangle\ 2.png);
+    background-image: url(../images/travel/1_V8ZfS1rObZACGtisJN430Q.jpeg);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    position: relative;
+  
+  }
+  
+  div.mountain-hiking span {
+    /* border: 3px solid white; */
+    font-size: 30px;
+    color: white;
+    font-family: 'Noto Serif TC', serif;
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+    position: absolute;
+    top: 190px;
+    left: 390px;
+    /* line-height: px; */
+    letter-spacing: 10px;
+  }
+  
+  span.triangle1 {
+    display: inline-block;
+    border-left: 38px solid transparent;
+    border-right: 73px solid transparent;
+    border-top: 0px solid orange;
+    border-bottom: 37px solid #224e69c4;
+    transform: rotate(-26deg);
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 490px;
+    left: 385px;
+  }
+  div.section_classic_itinrary{
+    display: none;
+  }
+}
 
 /* --------------trapioa--------------- */
 
@@ -1697,6 +1939,14 @@ div.section_professional_team div.teamMember>img {
   }
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1199.98px){
+
+  div.section_professional_team div.teamMember img{
+
+  width: 15rem;
+  height: 15rem;
+  }
+}
 
 
 div.section_professional_team div.teamMember>span>p.title1,
@@ -2013,6 +2263,81 @@ div.section_professional_team div.teamMember>span>p.centent1 {
    display:flex;
    width:90%;
    max-width:650px;
+   padding:3rem 0 1rem 0rem ;
+   margin:0 auto;
+   position: relative;
+   /* border-bottom:.1rem solid black; */
+  }
+
+  div.section_professional_team div.teamMember:last-child{
+    border-bottom:0 solid black;
+    padding-bottom: 6rem;
+   }
+
+  div.section_professional_team div.teamMember>span{
+    display: block;
+    width:90%;
+    padding-right:0;
+    
+  }
+
+  div.section_professional_team div.teamMember>span:nth-child(n+1){
+    display: block;
+    width:90%;
+    padding-left:1.5rem;
+    
+  }
+
+  div.section_professional_team div.teamMember>span p.content{
+    overflow: hidden;
+    max-width:280px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /*行數*/
+  -webkit-box-orient: vertical;
+  }
+
+  div.section_professional_team div.teamMember>span>p.content1{
+   /* margin:0; */
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199.98px){
+
+  div.section_professional_team{
+    width:90%;
+    max-width: 960px;
+    padding:0 ;
+    margin:0 auto ;
+  }
+  div.section_professional_team div.teamMember img{
+   
+    width: 13rem;
+    height: 13rem;
+    display:block;
+  }
+
+  div.section_professional_team>span{
+    display:block;
+    width:100%;
+    max-width: 500px;
+    padding: 0 ;
+    margin:0 auto;
+    letter-spacing: .2rem;
+   
+    
+  }
+  div.section_professional_team div.teamMember>span>p{
+    display:block;
+    max-width:400px;
+    width:100%;
+    /* border:1px solid green; */
+   }
+  
+  div.section_professional_team div.teamMember{
+   display:flex;
+   width:80%;
+   max-width:960px;
    padding:3rem 0 1rem 0rem ;
    margin:0 auto;
    position: relative;

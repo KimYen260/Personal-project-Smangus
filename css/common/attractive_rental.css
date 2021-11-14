@@ -84,3 +84,9 @@ div.wrap div.products a:hover>img.att-products{
     display: none;
   }
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1199.98px){
+  div.section_attractive_rental{
+    display: none;
+  }
+}

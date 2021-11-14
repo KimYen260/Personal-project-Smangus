@@ -197,12 +197,12 @@ div.svgLogos>a.svg i.fas {
 @media screen and (min-width: 1024px) and (max-width: 1199.98px){
   
     div.top_nav{
+        /* background-color: #1D2601; */
         display: block;
         height: 2.8rem;
         width: 100%;
-        max-width:1200px;
-        padding: 0 12em 0 1em;
-        font-size: 1rem;
+        padding: 0 8em 0 1em;
+        font-size: 1.1rem;
     }
 }
 
@@ -273,7 +273,18 @@ nav.header div.navMenu {
         display: none;
     }   
 }
+@media screen and (min-width: 1024px) and (max-width: 1199.98px){
 
+/* /menu整體/ */
+nav.header div.navMenu {
+    margin:0 auto;
+    padding: 0 3rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    height: 50px;
+}
+  }
+  
 nav.header div.navMenu>ul.main_menu {
     margin:0 auto;
     padding: 0;
@@ -320,6 +331,54 @@ nav.header div.navMenu ul.main_menu>li>a:visited {
     text-decoration: none;
     color:  #ffffff;
     font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199.98px){
+    nav.header div.navMenu>ul.main_menu {
+        width: 100%;
+        max-width: 850px;
+        position: relative;
+        display: flex;
+        font-size: 1.1rem;
+    } 
+    
+    nav.header div.navMenu ul.main_menu>li.menuList {
+        display: block;
+        list-style: none;
+        color: white;
+        width: 5rem; 
+        transform: translateX(100%-850px);   
+        /* text-align: center; */
+        line-height: 50px;
+        padding:0 ;
+        margin: 0 3rem;
+    }
+    
+    nav.header div.navMenu ul.main_menu>li.menuList>a {
+        display: block;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        line-height: 50px;
+        font-size: 1.1rem;
+        /* width: 100px;   */
+    }
+    
+    
+    nav.header div.navMenu ul.main_menu>li>a:hover {
+        text-decoration: none;
+        font-weight: 900;
+    }
+    
+    nav.header div.navMenu ul.main_menu>li.menuList>a:hover {
+        background-color: #1D2601;
+        border: 1px solid #1D2601;
+    }
+    
+    nav.header div.navMenu ul.main_menu>li>a:visited {
+        text-decoration: none;
+        color:  #ffffff;
+        font-weight: 700;
+    }
 }
 
 /* nav_logo */
@@ -401,4 +460,30 @@ nav.header div.navMenu .main_menu ul a:hover {
 }
 
 
+@media screen and (min-width: 1024px) and (max-width: 1199.98px){
+    /* .main_menu裡面的子目錄 */
+nav.header div.navMenu .main_menu ul {
+    text-align:center;
+    background: rgb(255, 255, 255);
+    margin: 0;
+    padding: 15px 18px 10px 18px;
+    opacity: 0;
+    font-size: 1.1rem;
+    position: absolute;
+    transition: all .5s ease;
+    top: 50px;
+    /* height: 2.5em; */
+    list-style: none;
+    left: -1.5rem;
+    z-index: 999;
+}
+
+/* .main_menu裡面的子目錄 裝備租借*/
+nav.header div.navMenu .main_menu ul.submenu_rental {
+    position: absolute;
+    left: -1.75rem;
+    text-align:center;
+    z-index: 999;
+}
+}
 
