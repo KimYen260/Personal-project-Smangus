@@ -260,7 +260,7 @@ nav.header div.banner-title>div.bold-title:hover {
       display: block;
       position: absolute;
       right:1rem;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
      }
      nav.header div.banner-title>p.main-title {
       display: block;
@@ -1213,7 +1213,7 @@ a.knowledgeInfo:after {
   }
 
   div.section_ourservice>h4:after {
-    padding: 0 3rem 0 2.5rem ;
+    padding: 0 1rem 0 2.5rem ;
     box-sizing: border-box;
   clear: both;
   content: "●";
