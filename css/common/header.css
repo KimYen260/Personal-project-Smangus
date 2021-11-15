@@ -212,7 +212,7 @@ div.svgLogos>a.svg i.fas {
         height: 2.8rem;
         min-width: 100%; 
         /* max-width:1200px; */
-        padding: 0 15em 0 1em;
+        padding: 0 7em 0 1em;
         font-size: 1.25rem;
     }
 }
@@ -221,7 +221,7 @@ div.svgLogos>a.svg i.fas {
     div.top_nav {
         display: block;
         min-width: 100%; 
-        padding: 0 20em 0 1em;
+        padding: 0 15em 0 1em;
         font-size: 1.25rem;
     }
     div.svgLogos>a.svg i.fas {
@@ -422,14 +422,14 @@ nav.header div.navMenu .main_menu ul {
     top: 50px;
     /* height: 2.5em; */
     list-style: none;
-    left: 10.48rem;
+    left: 0rem;
     z-index: 999;
 }
 
 /* .main_menu裡面的子目錄 裝備租借*/
 nav.header div.navMenu .main_menu ul.submenu_rental {
     position: absolute;
-    left: 27.25rem;
+    left: 0rem;
     text-align:center;
     z-index: 999;
 }
@@ -486,4 +486,29 @@ nav.header div.navMenu .main_menu ul.submenu_rental {
     z-index: 999;
 }
 }
+@media screen and (min-width: 1200px) and ( max-width: 1399.98px){
+    /* .main_menu裡面的子目錄 */
+nav.header div.navMenu .main_menu ul {
+    text-align:center;
+    background: rgb(255, 255, 255);
+    margin: 0;
+    padding: 15px 18px 10px 18px;
+    opacity: 0;
+    font-size: 1.1rem;
+    position: absolute;
+    transition: all .5s ease;
+    top: 50px;
+    /* height: 2.5em; */
+    list-style: none;
+    left: 1.35rem;
+    z-index: 999;
+}
 
+/* .main_menu裡面的子目錄 裝備租借*/
+nav.header div.navMenu .main_menu ul.submenu_rental {
+    position: absolute;
+    left: 1.4rem;
+    text-align:center;
+    z-index: 999;
+}
+}
