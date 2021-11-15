@@ -945,7 +945,7 @@ button.btn_submit{
 }
  
 div.smallSelection>label.time>input{
-  min-width: 286px;
+  min-width: 355px;
   width: 100%;
   margin: 0 auto;
 
@@ -2385,19 +2385,19 @@ div.section_professional_team div.teamMember>span>p.content1 {
   div.section_professional_team div.teamMember img.guider-photo_1{
    position: absolute;
    top:1rem;
-   right:4.5rem;
+   right:.5rem;
   }
 
   div.section_professional_team div.teamMember img.guider-photo_2{
     position: absolute;
     top:1rem;
-    right:4.5rem;
+    right:.5rem;
    }
 
    div.section_professional_team div.teamMember img.guider-photo_3{
     position: absolute;
     top:.5rem;
-    right:4.5rem;
+    right:.5rem;
    }
 
 
@@ -2415,6 +2415,11 @@ div.section_professional_team div.teamMember>span>p.content1 {
     display:block;
     max-width:400px;
     width:100%;
+    /* border:1px solid green; */
+   }
+
+   div.section_professional_team div.teamMember>span>p.centent{
+    font-size: 1.2rem;
     /* border:1px solid green; */
    }
   
@@ -2448,7 +2453,11 @@ div.section_professional_team div.teamMember>span>p.content1 {
   }
 
   div.section_professional_team div.teamMember>span>p.content1{
-   margin:0;
+   font-size: 1rem;
+   padding-bottom:.5rem;
+   padding-top:.5rem;
+
+    margin:0;
   }
 }
 
