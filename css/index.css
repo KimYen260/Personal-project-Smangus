@@ -1065,7 +1065,7 @@ div.smallSelection>label.people>select{
 /* ---------------------utility----------------------- */
 
 div.logo_belt {
-  background-image: url(../images/index/belt1.png);
+  background-image: url(../images/index/beltlong.png);
   height: 150px;
   width: 100%;
   background-repeat: no-repeat;
@@ -1115,7 +1115,7 @@ div.logo_belt>span {
   }
 
   div.logo_belt {
-    background-image: url(../images/index/belt1.png);
+    background-image: url(../images/index/beltlong.png);
     height: 100px;
     width: 100%;
     background-repeat: no-repeat;
@@ -1151,7 +1151,7 @@ div.logo_belt>span {
   }
 
   div.logo_belt {
-    background-image: url(../images/index/belt1.png);
+    background-image: url(../images/index/beltlong.png);
     height: 100px;
     width: 100%;
     background-repeat: no-repeat;
@@ -1183,7 +1183,7 @@ div.logo_belt>span {
 
 @media screen and (min-width: 1024px) and (max-width: 1199.98px){
   div.logo_belt {
-    background-image: url(../images/index/belt1.png);
+    background-image: url(../images/index/beltlong.png);
     height: 120px;
     width: 100%;
   }
