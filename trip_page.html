@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/traveling/trip_page.css">
     <link rel="stylesheet" href="./css/common/attractive_rental.css">
     <link rel="stylesheet" href="./css/common/breadcrumb.css">
+    <link href="./css/common/button.css" rel="stylesheet">
 </head>
 
 <body>
@@ -138,20 +139,28 @@
         </div>
         <div class="section_attractive_rental">
             <div class="description">裝備租借</div>
-            <div class="products">
-                <a href="#" target="_blank" rel="#"><img src="./images/attractivepurchase/501002-4700-2.png"
-                        alt="rental_pic">
-                </a>
-                <a href="#" target="_blank" rel="#"><img
-                        src="./images/attractivepurchase/boreal-ketil-hiking-boots.jpeg" alt="rental_pic">
-                </a>
-                <a href="#" target="_blank" rel="#"><img
-                        src="./images/attractivepurchase/camping-gas-stove-Va4J1LF-600.png" alt="rental_pic">
-                </a>
-                <a href="#" target="_blank" rel="#"><img src="./images/attractivepurchase/tent.png" alt="rental_pic">
-                </a>
+        <div class="viewPanel">
+          <input type="button" id="btnLeft" value=" < " disabled>
+            <div class="wrap">
+                <div class="products">
+                  <a href="#" target="_blank" rel="#"><img class="att-products" src="./images/attractivepurchase/501002-4700-2.png"
+                      alt="rental_pic"></a>
+                </div>
+                <div class="products">
+                  <a href="#" target="_blank" rel="#"><img class="att-products" src="./images/attractivepurchase/boreal-ketil-hiking-boots.jpeg"
+                      alt="rental_pic"></a>
+                </div>
+                <div class="products">
+                  <a href="#" target="_blank" rel="#"><img class="att-products" src="./images/attractivepurchase/camping-gas-stove-Va4J1LF-600.png"
+                      alt="rental_pic"></a>
+                </div>
+                <div class="products">
+                  <a href="#" target="_blank" rel="#"><img class="att-products" src="./images/attractivepurchase/tent.png" alt="rental_pic"> </a>
+                </div>
             </div>
+            <input type="button" id="btnRight" value=" > ">
         </div>
+      </div>
     </section>
     <footer>
         <div class="regulation">
@@ -173,8 +182,10 @@
             </div>
 
         </div>
-
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/button.js"></script>
+  <script src="./js/carousel.js"></script>
 </body>
 
 </html>
