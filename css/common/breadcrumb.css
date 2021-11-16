@@ -49,3 +49,62 @@ div.breadcrumb ol.breadcrumb_list>li>a {
 div.breadcrumb ol.breadcrumb_list>li>a:hover {
     color: #000000;
 }
+
+@media screen and (min-width: 320px) and (max-width: 413.98px) {
+    
+    div.breadcrumb {
+        
+    }
+    
+    div.breadcrumb ol.breadcrumb_list {
+    display: inline-block;
+    box-sizing: border-box;
+    height:2rem;
+    margin-left: 2rem;
+    padding: 35px 0;
+    list-style: none;
+    font-size: 0;
+}
+
+div.breadcrumb ol.breadcrumb_list>li {
+    /*   border: 1px solid red; */
+    /* display: inline-block; */
+    color: gray;
+    font-size: .9rem;
+}
+ 
+  }
+  
+  @media screen and (min-width: 414px) and (max-width: 575.98px) {
+  
+  
+  
+  }
+  
+  @media screen and (min-width: 576px) and (max-width: 767.98px) {
+  
+  
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 991.98px) {
+  
+  
+  
+  }
+  
+  @media screen and (min-width: 1024px) and (max-width: 1199.98px) {
+  
+  
+  }
+  
+  @media screen and (min-width: 1200px) and (max-width: 1399.98px) {
+  
+   
+  
+  }
+  
+  @media screen and (min-width: 1400px) {
+  
+    
+  
+  }
