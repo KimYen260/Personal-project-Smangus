@@ -361,19 +361,21 @@ nav.header div.banner-title>div.bold-title:hover {
     /* border: 1px solid black; */
   }
   nav.header div.banner-title>p.subtitle {
-   display: block;
-   left:1rem;
+   display: none;
+   
   }
   nav.header div.banner-title>div.bold-title {
-    display: block;
+    display: none;
     position: absolute;
     right:1rem;
    }
    nav.header div.banner-title>p.main-title {
+     text-align: center;
     display: block;
     position: absolute;
     right:12rem;
     font-size: 1.8rem;
+    margin: 0 auto;
    } 
   }
 
