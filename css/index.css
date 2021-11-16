@@ -2006,7 +2006,7 @@ div.river-tracing {
   display: block;
   height: 500px;
   width: 860px;   
-  -webkit-mask-image: url(../images/index/Rectangle1.png);
+  -webkit-mask-image: url(../images/index/Rectangleleft.png);
   background-image: url(../images/index/river.jpeg);
   background-size: 120%;
   background-repeat: no-repeat;
@@ -2033,7 +2033,7 @@ div.mountain-hiking {
   display: block;
   height: 500px;
   width: 800px;
-  -webkit-mask-image: url(../images/index/Rectangle2.png);
+  -webkit-mask-image: url(../images/index/Rectangleright.png);
   background-image: url(../images/travel/嘉明湖.jpeg);
   background-size: 120%;
   background-repeat: no-repeat;
@@ -2085,7 +2085,7 @@ span.triangle1 {
     display: block;
     height: 400px;
     width: 560px;
-    -webkit-mask-image: url(../images/index/Rectangle\ 1.png);
+    -webkit-mask-image: url(../images/index/Rectangleleft.png);
     background-image: url(../images/index/river.jpeg);
     background-size: 120%;
     background-repeat: no-repeat;
@@ -2112,7 +2112,7 @@ span.triangle1 {
     display: block;
     height: 500px;
     width: 800px;
-    -webkit-mask-image: url(../images/index/Rectangle\ 2.png);
+    -webkit-mask-image: url(../images/index/Rectangleright.png);
     background-image: url(../images/travel/1_V8ZfS1rObZACGtisJN430Q.jpeg);
     background-size: 120%;
     background-repeat: no-repeat;
