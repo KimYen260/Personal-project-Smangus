@@ -12,11 +12,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/common/header.css">
+  <link rel="stylesheet" href="./tools/slick/slick-theme.css">   <!-- /*slick*/ -->
+  <link rel="stylesheet" href="./tools/slick/slick.css">  <!-- slick -->
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/common/footer.css">
   <link rel="stylesheet" href="./css/common/attractive_rental.css">
   <!-- <link rel="stylesheet" href="/css/common/breadcrumb.css"> -->
  <link href="./css/common/button.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://use.typekit.net/aln6hfz.css">
 </head>
 
 <body>
@@ -35,7 +38,7 @@
       <li><a href="./rental_menu.html">裝備租借</a></li>
       <li><a href="./rental_menu.html">系列商品</a></li>
       <li class="nav_logo"><a class="svgLogos" href="#"><i class="fas fa-suitcase-rolling"></i></a></li>
-      <li><a href="./rental_menu.html">訂單查詢</a><a href="./rental_menu.html">登入</a></li>
+      <li><a href="./rental_menu.html">登入或訂單查詢</a></li>
      
     </ul>
   </nav>
@@ -74,13 +77,13 @@
 
         </ul>
       </div>
-      <div class="banner-title">
+      <!-- <div class="banner-title">
         <p class="subtitle">WORK HARD!</p>
         <p class="main-title">好的遊玩體驗,<br>心靈獲得滿足;<br>睡覺不是休息,<br>盡情玩樂才是。</p>
         <div class="bold-title">
           <p class="play">PLAY</p>
           <p class="harder">HARDER!</p>
-        </div>
+        </div> -->
       </div>
 
 
@@ -148,29 +151,34 @@
     <div class="section_attractive_rental">
           <div class="description">裝備租借</div>
       <div class="viewPanel">
-        <input type="button" id="btnLeft" value=" < " disabled>
-          <div class="wrap">
-              <div class="products">
-                <a href="#" target="_blank" rel="#"><img class="att-products" src="./images/attractivepurchase/501002-4700-2.png"
-                    alt="rental_pic"></a>
-              </div>
-              <div class="products">
-                <a href="#" target="_blank" rel="#"><img class="att-products" src="./images/attractivepurchase/boreal-ketil-hiking-boots.jpeg"
-                    alt="rental_pic"></a>
-              </div>
-              <div class="products">
-                <a href="#" target="_blank" rel="#"><img class="att-products" src="./images/attractivepurchase/camping-gas-stove-Va4J1LF-600.png"
-                    alt="rental_pic"></a>
-              </div>
-              <div class="products">
-                <a href="#" target="_blank" rel="#"><img class="att-products" src="./images/attractivepurchase/tent.png" alt="rental_pic"> </a>
-              </div>
+
+        <div class="wrap">
+          <div class="products">
+            <a href="#" ><img class="att-products" data-lazy="./images/attractivepurchase/501002-4700-2.png"
+                alt="rental_pic"></a>
           </div>
-          <input type="button" id="btnRight" value=" > ">
+          <div class="products">
+            <a href="#" ><img class="att-products" data-lazy="./images/attractivepurchase/boreal-ketil-hiking-boots.jpeg"
+                alt="rental_pic"></a>
+          </div>
+          <div class="products">
+            <a href="#" ><img class="att-products" data-lazy="./images/attractivepurchase/camping-gas-stove-Va4J1LF-600.png"
+                alt="rental_pic"></a>
+          </div>
+          <div class="products">
+            <a href="#" ><img class="att-products" data-lazy="./images/attractivepurchase/tent.png" alt="rental_pic"> </a>
+          </div>
+          <div class="products">
+            <a href="#" ><img class="att-products" data-lazy="./images/product/backpacks/Index-15-Backpack-Wander.jpg"  alt="rental_pic"></a>
+          </div>
+          <div class="products">
+            <a href="#" ><img class="att-products" data-lazy="./images/product/backpacks/MysteryRanch.jpg" alt="rental_pic"></a>
+          </div>
+      </div>
       </div>
     </div>
     <div class="section_ourservice">
-      <h4>our service</h4>
+      <span class="title">Our Service</span>
       <div class="paragraph">
         <p class="knowledgeInfo">
           smangus秉持著小而美的品質，採取1:6~8的嚮導/指導員與夥伴比例，除了能更仔細的照顧參與的夥伴們外，同時也能有更充裕的時間與夥伴們交流戶外經驗。在從事戶外活動過程中，有許多未知的自然風</p>
@@ -186,7 +194,7 @@
       <span>專業團隊</span>
       <div class="teamMember">
         <span>
-          <p class="titile1">Schaw Tsuei</p>
+          <p class="title1">Schaw Tsuei</p>
           <p class="content1">成功攻頂南美6000m級高峰</p>
           <p class="subtitle1">具有交通部核發之專業領隊執照</p>
           <p class="content">喜愛和同好朋友們一起探索台灣山林之美，專找沒人見過的風景，尋訪地圖裡浮現的悠境 ;
@@ -197,7 +205,7 @@
       <div class="teamMember">
         <img  class="guider-photo_2" src="./images/index/胡嘉穎.jpg" alt="guider-photo">
         <span>
-          <p class="titile1">Jane Hu</p>
+          <p class="title1">Jane Hu</p>
           <p class="content1">完成歐洲最高峰攀登</p>
           <p class="subtitle1">具有交通部核發之專業領隊執照</p>
           <p class="content">攀登台灣近七十座百岳，並持續參與國內長城登山活動。
@@ -207,7 +215,7 @@
       </div>
       <div class="teamMember">
         <span>
-          <p class="titile1">Joyce Liu</p>
+          <p class="title1">Joyce Liu</p>
           <p class="content1">完成非洲及歐洲最高峰攀登</p>
           <p class="subtitle1">具有交通部核發之專業領隊執照</p>
           <p class="content">我們走入山林，費盡力氣，只為一瞬間的寧靜與永恆的記憶。
@@ -241,8 +249,11 @@
 
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./js/button.js"></script>
-<script src="./js/carousel.js"></script>
+  <script src="./js/button.js"></script>   
+  <script src="./tools/slick/Jquery-1.11.0.min.js"></script>
+  <script src="./tools/slick/Jquery-migrate-1.2.1.min.js"></script>
+  <script src="./tools/slick/slick.min.js"></script>
+  <!-- /*button,slick*/ -->
 </body>
 
 </html>

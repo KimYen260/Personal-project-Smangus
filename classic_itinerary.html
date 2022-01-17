@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="./css/common/attractive_rental.css">
   <link rel="stylesheet" href="./css/common/breadcrumb.css">
   <link href="./css/common/button.css" rel="stylesheet">
+  <link rel="stylesheet" href="./tools/slick/slick-theme.css"> <!-- /*slick*/ -->
+  <link rel="stylesheet" href="./tools/slick/slick.css"> <!-- slick -->
 
 </head>
 
@@ -36,7 +38,7 @@
       <li><a href="./rental_menu.html">裝備租借</a></li>
       <li><a href="./rental_menu.html">系列商品</a></li>
       <li class="nav_logo"><a class="svgLogos" href="#"><i class="fas fa-suitcase-rolling"></i></a></li>
-      <li><a href="./rental_menu.html">訂單查詢</a><a href="./rental_menu.html">登入</a></li>
+      <li><a href="./rental_menu.html">登入或訂單查詢</a></li>
     </ul>
   </nav>
   <div class="top_nav">
@@ -86,37 +88,41 @@
         <li>精選行程</li>
       </ol>
     </div>
-    <ul class="cards mb-95 mt-48">
+<div class="card-arrange"style="display: flex; width:100%;">
+  <ul class="cards mb-95 mt-48" style="padding-right: 0;">
       <li>
         <div class="card1"><span>精選行程</span></div>
       </li>
-
+      
       <li>
         <div class="card2"><i class="fas fa-chevron-left"></i></div>
       </li>
+  </ul>
 
-      <li>
-        <div class="cardx"
-          style="background-image:url(./images/travel/camen-lake.1.jpg);background-position: right -200px bottom 0px;">
-          <p class="caption">三天兩夜</p>
-          <p class="title">天使的眼淚<br>嘉明湖<br>台東秘境</p>
-          <p class="description">爬上海拔3000多公尺的高山，三日裡背負重裝，由專業高山嚮導帶領從池上出發3天2夜，沿途中...</p>
-          <div class="bottom-sec">
-            <a class="btn-a" href="/trip_page.html" target="_blank"><button class="btn-explor">參加探索</button></a>
-            <div class="price">
-              <div class="uppercase">
-                <div>TWD</div>
-                <div>起</div>
-              </div>
-              <div class="dollor">7,500</div>
+  <ul class="cards multiple-items mb-95 mt-48">
+    <li>
+      <div class="cardx"
+        style="background-image:url(./images/travel/camen-lake.1.jpg);background-position: right -200px bottom 0px;">
+        <p class="caption">三天兩夜</p>
+        <p class="title">天使的眼淚<br>嘉明湖<br>台東秘境</p>
+        <p class="description">爬上海拔3000多公尺的高山，三日裡背負重裝，由專業高山嚮導帶領從池上出發3天2夜，沿途中...</p>
+        <div class="bottom-sec">
+          <a class="btn-a" href="/trip_page.html" target="_blank"><button class="btn-explor">參加探索</button></a>
+          <div class="price">
+            <div class="uppercase">
+              <div>TWD</div>
+              <div>起</div>
             </div>
+            <div class="dollor">7,500</div>
           </div>
         </div>
-      </li>
-
-      <li>
-        <div class="cardx"
-          style="background-image:url(./images/travel/花蓮翡翠谷.jpg);background-position: right -200px bottom 0px;">
+      </div>
+    </li>
+    
+    <li >
+      <div class="cardx"
+      style="background-image:url(./images/travel/花蓮翡翠谷.jpg);background-position: right -200px bottom 0px;">
+      <div>
           <p class="caption">4.5小時</p>
           <p class="title">花蓮翡翠谷<br>溯溪<br>最新秘境</p>
           <p class="description">花蓮翡翠谷位於慕谷慕魚的北邊，與銅門村隔著木瓜溪兩兩相對，彷彿是兩顆美麗的珍珠，讓人珍賞大自然的美麗...</p>
@@ -131,9 +137,9 @@
             </div>
           </div>
         </div>
-      </li>
+    </li>
 
-      <li>
+    <li>
         <div class="cardx"
           style="background-image:url(./images/travel/CAROLSLAKE.jpg);background-position: right -200px bottom 0px;">
           <p class="caption">三天兩夜</p>
@@ -150,9 +156,9 @@
             </div>
           </div>
         </div>
-      </li>
+    </li>
 
-      <li>
+    <li>
         <div class="cardx"
           style="background-image:url(./images/travel/花蓮三棧南溪半日溯溪｜溯溪入門推薦.jpg);background-position: right -200px bottom 0px;">
           <p class="caption">6小時</p>
@@ -169,8 +175,10 @@
             </div>
           </div>
         </div>
-      </li>
-    </ul>
+    </li>
+
+  </ul>
+</div>
     <div class="section_ourservice">
       <h4>our service</h4>
       <div class="paragraph">
@@ -179,30 +187,34 @@
         <a class="knowledgeInfo" href="">read more</a>
       </div>
     </div>
-    <div class="section_attractive_rental">
-      <div class="description">裝備租借</div>
+<div class="section_attractive_rental">
+  <div class="description">裝備租借</div>
   <div class="viewPanel">
-    <input type="button" id="btnLeft" value=" < " disabled>
       <div class="wrap">
           <div class="products">
-            <a href="#" target="_blank" rel="#"><img class="att-products" src="./images/attractivepurchase/501002-4700-2.png"
+            <a href="#" ><img class="att-products" data-lazy="./images/attractivepurchase/501002-4700-2.png"
                 alt="rental_pic"></a>
           </div>
           <div class="products">
-            <a href="#" target="_blank" rel="#"><img class="att-products" src="./images/attractivepurchase/boreal-ketil-hiking-boots.jpeg"
+            <a href="#" ><img class="att-products" data-lazy="./images/attractivepurchase/boreal-ketil-hiking-boots.jpeg"
                 alt="rental_pic"></a>
           </div>
           <div class="products">
-            <a href="#" target="_blank" rel="#"><img class="att-products" src="./images/attractivepurchase/camping-gas-stove-Va4J1LF-600.png"
+            <a href="#" ><img class="att-products" data-lazy="./images/attractivepurchase/camping-gas-stove-Va4J1LF-600.png"
                 alt="rental_pic"></a>
           </div>
           <div class="products">
-            <a href="#" target="_blank" rel="#"><img class="att-products" src="./images/attractivepurchase/tent.png" alt="rental_pic"> </a>
+            <a href="#" ><img class="att-products" data-lazy="./images/attractivepurchase/tent.png" alt="rental_pic"> </a>
+          </div>
+          <div class="products">
+            <a href="#" ><img class="att-products" data-lazy="./images/product/backpacks/Index-15-Backpack-Wander.jpg"  alt="rental_pic"></a>
+          </div>
+          <div class="products">
+            <a href="#" ><img class="att-products" data-lazy="./images/product/backpacks/MysteryRanch.jpg" alt="rental_pic"></a>
           </div>
       </div>
-      <input type="button" id="btnRight" value=" > ">
   </div>
-    </div>
+</div>
 
   </section>
   <footer>
@@ -229,7 +241,10 @@
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./js/button.js"></script>
-<script src="./js/carousel.js"></script>
+  <script src="./tools/slick/Jquery-1.11.0.min.js"></script>
+  <script src="./tools/slick/Jquery-migrate-1.2.1.min.js"></script>
+  <script src="./tools/slick/slick.min.js"></script>
+
 </body>
 
 </html>
